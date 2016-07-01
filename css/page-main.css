@@ -1,0 +1,16 @@
+#page-main .main {
+	padding: 56px 0 55px 0;
+	height: 100%;
+	width: 100%;
+}
+
+#page-main .view-people,
+#page-main .view-calendar {
+	display: none;
+	width: 100%;
+	height: 100%;
+}
+
+#page-main .view-selected {
+	display: inline-block!important;
+}

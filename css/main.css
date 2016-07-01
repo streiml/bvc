@@ -1,0 +1,2441 @@
+/* line 107, C:/Projekte/volleyball/sass/components/_color.scss */
+.blue {
+  background-color: #2196F3 !important;
+}
+
+/* line 110, C:/Projekte/volleyball/sass/components/_color.scss */
+.blue-text {
+  color: #2196F3 !important;
+}
+
+/* line 115, C:/Projekte/volleyball/sass/components/_color.scss */
+.blue.lighten-2 {
+  background-color: #64B5F6 !important;
+}
+
+/* line 118, C:/Projekte/volleyball/sass/components/_color.scss */
+.blue-text.text-lighten-2 {
+  color: #64B5F6 !important;
+}
+
+/* line 115, C:/Projekte/volleyball/sass/components/_color.scss */
+.blue.darken-2 {
+  background-color: #1976D2 !important;
+}
+
+/* line 118, C:/Projekte/volleyball/sass/components/_color.scss */
+.blue-text.text-darken-2 {
+  color: #1976D2 !important;
+}
+
+/* line 107, C:/Projekte/volleyball/sass/components/_color.scss */
+.deep-orange {
+  background-color: #ff5722 !important;
+}
+
+/* line 110, C:/Projekte/volleyball/sass/components/_color.scss */
+.deep-orange-text {
+  color: #ff5722 !important;
+}
+
+/* line 115, C:/Projekte/volleyball/sass/components/_color.scss */
+.deep-orange.lighten-5 {
+  background-color: #fbe9e7 !important;
+}
+
+/* line 118, C:/Projekte/volleyball/sass/components/_color.scss */
+.deep-orange-text.text-lighten-5 {
+  color: #fbe9e7 !important;
+}
+
+/* line 115, C:/Projekte/volleyball/sass/components/_color.scss */
+.deep-orange.lighten-4 {
+  background-color: #ffccbc !important;
+}
+
+/* line 118, C:/Projekte/volleyball/sass/components/_color.scss */
+.deep-orange-text.text-lighten-4 {
+  color: #ffccbc !important;
+}
+
+/* line 115, C:/Projekte/volleyball/sass/components/_color.scss */
+.deep-orange.lighten-3 {
+  background-color: #ffab91 !important;
+}
+
+/* line 118, C:/Projekte/volleyball/sass/components/_color.scss */
+.deep-orange-text.text-lighten-3 {
+  color: #ffab91 !important;
+}
+
+/* line 115, C:/Projekte/volleyball/sass/components/_color.scss */
+.deep-orange.lighten-2 {
+  background-color: #ff8a65 !important;
+}
+
+/* line 118, C:/Projekte/volleyball/sass/components/_color.scss */
+.deep-orange-text.text-lighten-2 {
+  color: #ff8a65 !important;
+}
+
+/* line 115, C:/Projekte/volleyball/sass/components/_color.scss */
+.deep-orange.lighten-1 {
+  background-color: #ff7043 !important;
+}
+
+/* line 118, C:/Projekte/volleyball/sass/components/_color.scss */
+.deep-orange-text.text-lighten-1 {
+  color: #ff7043 !important;
+}
+
+/* line 115, C:/Projekte/volleyball/sass/components/_color.scss */
+.deep-orange.darken-1 {
+  background-color: #f4511e !important;
+}
+
+/* line 118, C:/Projekte/volleyball/sass/components/_color.scss */
+.deep-orange-text.text-darken-1 {
+  color: #f4511e !important;
+}
+
+/* line 115, C:/Projekte/volleyball/sass/components/_color.scss */
+.deep-orange.darken-2 {
+  background-color: #e64a19 !important;
+}
+
+/* line 118, C:/Projekte/volleyball/sass/components/_color.scss */
+.deep-orange-text.text-darken-2 {
+  color: #e64a19 !important;
+}
+
+/* line 115, C:/Projekte/volleyball/sass/components/_color.scss */
+.deep-orange.darken-3 {
+  background-color: #d84315 !important;
+}
+
+/* line 118, C:/Projekte/volleyball/sass/components/_color.scss */
+.deep-orange-text.text-darken-3 {
+  color: #d84315 !important;
+}
+
+/* line 115, C:/Projekte/volleyball/sass/components/_color.scss */
+.deep-orange.darken-4 {
+  background-color: #bf360c !important;
+}
+
+/* line 118, C:/Projekte/volleyball/sass/components/_color.scss */
+.deep-orange-text.text-darken-4 {
+  color: #bf360c !important;
+}
+
+/* line 115, C:/Projekte/volleyball/sass/components/_color.scss */
+.deep-orange.accent-1 {
+  background-color: #ff9e80 !important;
+}
+
+/* line 118, C:/Projekte/volleyball/sass/components/_color.scss */
+.deep-orange-text.text-accent-1 {
+  color: #ff9e80 !important;
+}
+
+/* line 115, C:/Projekte/volleyball/sass/components/_color.scss */
+.deep-orange.accent-2 {
+  background-color: #ff6e40 !important;
+}
+
+/* line 118, C:/Projekte/volleyball/sass/components/_color.scss */
+.deep-orange-text.text-accent-2 {
+  color: #ff6e40 !important;
+}
+
+/* line 115, C:/Projekte/volleyball/sass/components/_color.scss */
+.deep-orange.accent-3 {
+  background-color: #ff3d00 !important;
+}
+
+/* line 118, C:/Projekte/volleyball/sass/components/_color.scss */
+.deep-orange-text.text-accent-3 {
+  color: #ff3d00 !important;
+}
+
+/* line 115, C:/Projekte/volleyball/sass/components/_color.scss */
+.deep-orange.accent-4 {
+  background-color: #dd2c00 !important;
+}
+
+/* line 118, C:/Projekte/volleyball/sass/components/_color.scss */
+.deep-orange-text.text-accent-4 {
+  color: #dd2c00 !important;
+}
+
+/* line 107, C:/Projekte/volleyball/sass/components/_color.scss */
+.green {
+  background-color: #4CAF50 !important;
+}
+
+/* line 110, C:/Projekte/volleyball/sass/components/_color.scss */
+.green-text {
+  color: #4CAF50 !important;
+}
+
+/* line 115, C:/Projekte/volleyball/sass/components/_color.scss */
+.green.lighten-5 {
+  background-color: #E8F5E9 !important;
+}
+
+/* line 118, C:/Projekte/volleyball/sass/components/_color.scss */
+.green-text.text-lighten-5 {
+  color: #E8F5E9 !important;
+}
+
+/* line 115, C:/Projekte/volleyball/sass/components/_color.scss */
+.green.lighten-4 {
+  background-color: #C8E6C9 !important;
+}
+
+/* line 118, C:/Projekte/volleyball/sass/components/_color.scss */
+.green-text.text-lighten-4 {
+  color: #C8E6C9 !important;
+}
+
+/* line 115, C:/Projekte/volleyball/sass/components/_color.scss */
+.green.lighten-3 {
+  background-color: #A5D6A7 !important;
+}
+
+/* line 118, C:/Projekte/volleyball/sass/components/_color.scss */
+.green-text.text-lighten-3 {
+  color: #A5D6A7 !important;
+}
+
+/* line 115, C:/Projekte/volleyball/sass/components/_color.scss */
+.green.lighten-2 {
+  background-color: #81C784 !important;
+}
+
+/* line 118, C:/Projekte/volleyball/sass/components/_color.scss */
+.green-text.text-lighten-2 {
+  color: #81C784 !important;
+}
+
+/* line 115, C:/Projekte/volleyball/sass/components/_color.scss */
+.green.lighten-1 {
+  background-color: #66BB6A !important;
+}
+
+/* line 118, C:/Projekte/volleyball/sass/components/_color.scss */
+.green-text.text-lighten-1 {
+  color: #66BB6A !important;
+}
+
+/* line 115, C:/Projekte/volleyball/sass/components/_color.scss */
+.green.darken-1 {
+  background-color: #43A047 !important;
+}
+
+/* line 118, C:/Projekte/volleyball/sass/components/_color.scss */
+.green-text.text-darken-1 {
+  color: #43A047 !important;
+}
+
+/* line 115, C:/Projekte/volleyball/sass/components/_color.scss */
+.green.darken-2 {
+  background-color: #388E3C !important;
+}
+
+/* line 118, C:/Projekte/volleyball/sass/components/_color.scss */
+.green-text.text-darken-2 {
+  color: #388E3C !important;
+}
+
+/* line 115, C:/Projekte/volleyball/sass/components/_color.scss */
+.green.darken-3 {
+  background-color: #2E7D32 !important;
+}
+
+/* line 118, C:/Projekte/volleyball/sass/components/_color.scss */
+.green-text.text-darken-3 {
+  color: #2E7D32 !important;
+}
+
+/* line 115, C:/Projekte/volleyball/sass/components/_color.scss */
+.green.darken-4 {
+  background-color: #1B5E20 !important;
+}
+
+/* line 118, C:/Projekte/volleyball/sass/components/_color.scss */
+.green-text.text-darken-4 {
+  color: #1B5E20 !important;
+}
+
+/* line 115, C:/Projekte/volleyball/sass/components/_color.scss */
+.green.accent-1 {
+  background-color: #B9F6CA !important;
+}
+
+/* line 118, C:/Projekte/volleyball/sass/components/_color.scss */
+.green-text.text-accent-1 {
+  color: #B9F6CA !important;
+}
+
+/* line 115, C:/Projekte/volleyball/sass/components/_color.scss */
+.green.accent-2 {
+  background-color: #69F0AE !important;
+}
+
+/* line 118, C:/Projekte/volleyball/sass/components/_color.scss */
+.green-text.text-accent-2 {
+  color: #69F0AE !important;
+}
+
+/* line 115, C:/Projekte/volleyball/sass/components/_color.scss */
+.green.accent-3 {
+  background-color: #00E676 !important;
+}
+
+/* line 118, C:/Projekte/volleyball/sass/components/_color.scss */
+.green-text.text-accent-3 {
+  color: #00E676 !important;
+}
+
+/* line 115, C:/Projekte/volleyball/sass/components/_color.scss */
+.green.accent-4 {
+  background-color: #00C853 !important;
+}
+
+/* line 118, C:/Projekte/volleyball/sass/components/_color.scss */
+.green-text.text-accent-4 {
+  color: #00C853 !important;
+}
+
+/* line 107, C:/Projekte/volleyball/sass/components/_color.scss */
+.light-green {
+  background-color: #8bc34a !important;
+}
+
+/* line 110, C:/Projekte/volleyball/sass/components/_color.scss */
+.light-green-text {
+  color: #8bc34a !important;
+}
+
+/* line 115, C:/Projekte/volleyball/sass/components/_color.scss */
+.light-green.lighten-5 {
+  background-color: #f1f8e9 !important;
+}
+
+/* line 118, C:/Projekte/volleyball/sass/components/_color.scss */
+.light-green-text.text-lighten-5 {
+  color: #f1f8e9 !important;
+}
+
+/* line 115, C:/Projekte/volleyball/sass/components/_color.scss */
+.light-green.lighten-4 {
+  background-color: #dcedc8 !important;
+}
+
+/* line 118, C:/Projekte/volleyball/sass/components/_color.scss */
+.light-green-text.text-lighten-4 {
+  color: #dcedc8 !important;
+}
+
+/* line 115, C:/Projekte/volleyball/sass/components/_color.scss */
+.light-green.lighten-3 {
+  background-color: #c5e1a5 !important;
+}
+
+/* line 118, C:/Projekte/volleyball/sass/components/_color.scss */
+.light-green-text.text-lighten-3 {
+  color: #c5e1a5 !important;
+}
+
+/* line 115, C:/Projekte/volleyball/sass/components/_color.scss */
+.light-green.lighten-2 {
+  background-color: #aed581 !important;
+}
+
+/* line 118, C:/Projekte/volleyball/sass/components/_color.scss */
+.light-green-text.text-lighten-2 {
+  color: #aed581 !important;
+}
+
+/* line 115, C:/Projekte/volleyball/sass/components/_color.scss */
+.light-green.lighten-1 {
+  background-color: #9ccc65 !important;
+}
+
+/* line 118, C:/Projekte/volleyball/sass/components/_color.scss */
+.light-green-text.text-lighten-1 {
+  color: #9ccc65 !important;
+}
+
+/* line 115, C:/Projekte/volleyball/sass/components/_color.scss */
+.light-green.darken-1 {
+  background-color: #7cb342 !important;
+}
+
+/* line 118, C:/Projekte/volleyball/sass/components/_color.scss */
+.light-green-text.text-darken-1 {
+  color: #7cb342 !important;
+}
+
+/* line 115, C:/Projekte/volleyball/sass/components/_color.scss */
+.light-green.darken-2 {
+  background-color: #689f38 !important;
+}
+
+/* line 118, C:/Projekte/volleyball/sass/components/_color.scss */
+.light-green-text.text-darken-2 {
+  color: #689f38 !important;
+}
+
+/* line 115, C:/Projekte/volleyball/sass/components/_color.scss */
+.light-green.darken-3 {
+  background-color: #558b2f !important;
+}
+
+/* line 118, C:/Projekte/volleyball/sass/components/_color.scss */
+.light-green-text.text-darken-3 {
+  color: #558b2f !important;
+}
+
+/* line 115, C:/Projekte/volleyball/sass/components/_color.scss */
+.light-green.darken-4 {
+  background-color: #33691e !important;
+}
+
+/* line 118, C:/Projekte/volleyball/sass/components/_color.scss */
+.light-green-text.text-darken-4 {
+  color: #33691e !important;
+}
+
+/* line 115, C:/Projekte/volleyball/sass/components/_color.scss */
+.light-green.accent-1 {
+  background-color: #ccff90 !important;
+}
+
+/* line 118, C:/Projekte/volleyball/sass/components/_color.scss */
+.light-green-text.text-accent-1 {
+  color: #ccff90 !important;
+}
+
+/* line 115, C:/Projekte/volleyball/sass/components/_color.scss */
+.light-green.accent-2 {
+  background-color: #b2ff59 !important;
+}
+
+/* line 118, C:/Projekte/volleyball/sass/components/_color.scss */
+.light-green-text.text-accent-2 {
+  color: #b2ff59 !important;
+}
+
+/* line 115, C:/Projekte/volleyball/sass/components/_color.scss */
+.light-green.accent-3 {
+  background-color: #76ff03 !important;
+}
+
+/* line 118, C:/Projekte/volleyball/sass/components/_color.scss */
+.light-green-text.text-accent-3 {
+  color: #76ff03 !important;
+}
+
+/* line 115, C:/Projekte/volleyball/sass/components/_color.scss */
+.light-green.accent-4 {
+  background-color: #64dd17 !important;
+}
+
+/* line 118, C:/Projekte/volleyball/sass/components/_color.scss */
+.light-green-text.text-accent-4 {
+  color: #64dd17 !important;
+}
+
+/* line 107, C:/Projekte/volleyball/sass/components/_color.scss */
+.red {
+  background-color: #F44336 !important;
+}
+
+/* line 110, C:/Projekte/volleyball/sass/components/_color.scss */
+.red-text {
+  color: #F44336 !important;
+}
+
+/* line 107, C:/Projekte/volleyball/sass/components/_color.scss */
+.grey {
+  background-color: #9e9e9e !important;
+}
+
+/* line 110, C:/Projekte/volleyball/sass/components/_color.scss */
+.grey-text {
+  color: #9e9e9e !important;
+}
+
+/* line 115, C:/Projekte/volleyball/sass/components/_color.scss */
+.grey.lighten-5 {
+  background-color: #fafafa !important;
+}
+
+/* line 118, C:/Projekte/volleyball/sass/components/_color.scss */
+.grey-text.text-lighten-5 {
+  color: #fafafa !important;
+}
+
+/* line 115, C:/Projekte/volleyball/sass/components/_color.scss */
+.grey.lighten-4 {
+  background-color: #f5f5f5 !important;
+}
+
+/* line 118, C:/Projekte/volleyball/sass/components/_color.scss */
+.grey-text.text-lighten-4 {
+  color: #f5f5f5 !important;
+}
+
+/* line 115, C:/Projekte/volleyball/sass/components/_color.scss */
+.grey.lighten-3 {
+  background-color: #eeeeee !important;
+}
+
+/* line 118, C:/Projekte/volleyball/sass/components/_color.scss */
+.grey-text.text-lighten-3 {
+  color: #eeeeee !important;
+}
+
+/* line 115, C:/Projekte/volleyball/sass/components/_color.scss */
+.grey.lighten-2 {
+  background-color: #e0e0e0 !important;
+}
+
+/* line 118, C:/Projekte/volleyball/sass/components/_color.scss */
+.grey-text.text-lighten-2 {
+  color: #e0e0e0 !important;
+}
+
+/* line 115, C:/Projekte/volleyball/sass/components/_color.scss */
+.grey.lighten-1 {
+  background-color: #bdbdbd !important;
+}
+
+/* line 118, C:/Projekte/volleyball/sass/components/_color.scss */
+.grey-text.text-lighten-1 {
+  color: #bdbdbd !important;
+}
+
+/* line 115, C:/Projekte/volleyball/sass/components/_color.scss */
+.grey.darken-1 {
+  background-color: #757575 !important;
+}
+
+/* line 118, C:/Projekte/volleyball/sass/components/_color.scss */
+.grey-text.text-darken-1 {
+  color: #757575 !important;
+}
+
+/* line 115, C:/Projekte/volleyball/sass/components/_color.scss */
+.grey.darken-2 {
+  background-color: #616161 !important;
+}
+
+/* line 118, C:/Projekte/volleyball/sass/components/_color.scss */
+.grey-text.text-darken-2 {
+  color: #616161 !important;
+}
+
+/* line 115, C:/Projekte/volleyball/sass/components/_color.scss */
+.grey.darken-3 {
+  background-color: #424242 !important;
+}
+
+/* line 118, C:/Projekte/volleyball/sass/components/_color.scss */
+.grey-text.text-darken-3 {
+  color: #424242 !important;
+}
+
+/* line 115, C:/Projekte/volleyball/sass/components/_color.scss */
+.grey.darken-4 {
+  background-color: #212121 !important;
+}
+
+/* line 118, C:/Projekte/volleyball/sass/components/_color.scss */
+.grey-text.text-darken-4 {
+  color: #212121 !important;
+}
+
+/* line 127, C:/Projekte/volleyball/sass/components/_color.scss */
+.black {
+  background-color: #000000 !important;
+}
+
+/* line 130, C:/Projekte/volleyball/sass/components/_color.scss */
+.black-text {
+  color: #000000 !important;
+}
+
+/* line 127, C:/Projekte/volleyball/sass/components/_color.scss */
+.white {
+  background-color: #FFFFFF !important;
+}
+
+/* line 130, C:/Projekte/volleyball/sass/components/_color.scss */
+.white-text {
+  color: #FFFFFF !important;
+}
+
+/* line 127, C:/Projekte/volleyball/sass/components/_color.scss */
+.transparent {
+  background-color: transparent !important;
+}
+
+/* line 130, C:/Projekte/volleyball/sass/components/_color.scss */
+.transparent-text {
+  color: transparent !important;
+}
+
+/* ==========================================================================
+   Materialize variables
+   ========================================================================== */
+/**
+ * Table of Contents:
+ *
+ *  1. Colors
+ *  2. Badges
+ *  3. Buttons
+ *  4. Cards
+ *  5. Collapsible
+ *  6. Chips
+ *  7. Date Picker
+ *  8. Dropdown
+ *  10. Forms
+ *  11. Global
+ *  12. Grid
+ *  13. Navigation Bar
+ *  14. Side Navigation
+ *  15. Photo Slider
+ *  16. Spinners | Loaders
+ *  17. Tabs
+ *  18. Tables
+ *  19. Toasts
+ *  20. Typography
+ *  21. Footer
+ *  22. Flow Text
+ *  23. Collections
+ *  24. Progress Bar
+ */
+/* 1. Colors
+   ========================================================================== */
+/* 9. Fonts
+   ========================================================================== */
+/* 11. Global
+   ========================================================================== */
+/* 12. Grid
+   ========================================================================== */
+/* 13. Navigation Bar
+   ========================================================================== */
+/* 20. Typography
+   ========================================================================== */
+/* 22. Flow Text
+   ========================================================================== */
+/* 23. Icons
+   ========================================================================== */
+/* 24. Panels
+   ========================================================================== */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 6, C:/Projekte/volleyball/sass/components/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  -webkit-padding-start: 0;
+  -webkit-padding-before: 0;
+  -webkit-padding-after: 0;
+  -webkit-padding-end: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 41, C:/Projekte/volleyball/sass/components/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 45, C:/Projekte/volleyball/sass/components/_reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 48, C:/Projekte/volleyball/sass/components/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 51, C:/Projekte/volleyball/sass/components/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 54, C:/Projekte/volleyball/sass/components/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 59, C:/Projekte/volleyball/sass/components/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS and IE text size adjust after device orientation change,
+ *    without disabling user zoom.
+ */
+/* line 9, C:/Projekte/volleyball/sass/components/_normalize.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+/* line 19, C:/Projekte/volleyball/sass/components/_normalize.scss */
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+/* line 33, C:/Projekte/volleyball/sass/components/_normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+/* line 54, C:/Projekte/volleyball/sass/components/_normalize.scss */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 67, C:/Projekte/volleyball/sass/components/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/10/11, Safari, and Firefox < 22.
+ */
+/* line 77, C:/Projekte/volleyball/sass/components/_normalize.scss */
+[hidden],
+template {
+  display: none;
+}
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+/* line 89, C:/Projekte/volleyball/sass/components/_normalize.scss */
+a {
+  background-color: transparent;
+}
+
+/**
+ * Improve readability of focused elements when they are also in an
+ * active/hover state.
+ */
+/* line 98, C:/Projekte/volleyball/sass/components/_normalize.scss */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+/* line 110, C:/Projekte/volleyball/sass/components/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+/* line 118, C:/Projekte/volleyball/sass/components/_normalize.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+/* line 127, C:/Projekte/volleyball/sass/components/_normalize.scss */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+/* line 136, C:/Projekte/volleyball/sass/components/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 145, C:/Projekte/volleyball/sass/components/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 154, C:/Projekte/volleyball/sass/components/_normalize.scss */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 162, C:/Projekte/volleyball/sass/components/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 170, C:/Projekte/volleyball/sass/components/_normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 174, C:/Projekte/volleyball/sass/components/_normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+/* line 185, C:/Projekte/volleyball/sass/components/_normalize.scss */
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+/* line 193, C:/Projekte/volleyball/sass/components/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+/* line 204, C:/Projekte/volleyball/sass/components/_normalize.scss */
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+/* line 212, C:/Projekte/volleyball/sass/components/_normalize.scss */
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Contain overflow in all browsers.
+ */
+/* line 221, C:/Projekte/volleyball/sass/components/_normalize.scss */
+pre {
+  overflow: auto;
+}
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+/* line 229, C:/Projekte/volleyball/sass/components/_normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+/* line 252, C:/Projekte/volleyball/sass/components/_normalize.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+/* line 266, C:/Projekte/volleyball/sass/components/_normalize.scss */
+button {
+  overflow: visible;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+/* line 277, C:/Projekte/volleyball/sass/components/_normalize.scss */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 290, C:/Projekte/volleyball/sass/components/_normalize.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 302, C:/Projekte/volleyball/sass/components/_normalize.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+/* line 311, C:/Projekte/volleyball/sass/components/_normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 322, C:/Projekte/volleyball/sass/components/_normalize.scss */
+input {
+  line-height: normal;
+}
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+/* line 334, C:/Projekte/volleyball/sass/components/_normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+/* line 346, C:/Projekte/volleyball/sass/components/_normalize.scss */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome.
+ */
+/* line 356, C:/Projekte/volleyball/sass/components/_normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  box-sizing: content-box;
+  /* 2 */
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+/* line 367, C:/Projekte/volleyball/sass/components/_normalize.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 376, C:/Projekte/volleyball/sass/components/_normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 387, C:/Projekte/volleyball/sass/components/_normalize.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+/* line 396, C:/Projekte/volleyball/sass/components/_normalize.scss */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+/* line 405, C:/Projekte/volleyball/sass/components/_normalize.scss */
+optgroup {
+  font-weight: bold;
+}
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 416, C:/Projekte/volleyball/sass/components/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 421, C:/Projekte/volleyball/sass/components/_normalize.scss */
+td,
+th {
+  padding: 0;
+}
+
+/* line 1, C:/Projekte/volleyball/sass/components/_global.scss */
+ul {
+  list-style-type: none;
+}
+
+/* line 2, C:/Projekte/volleyball/sass/components/_global.scss */
+ul.browser-default {
+  list-style-type: initial;
+}
+
+/* line 9, C:/Projekte/volleyball/sass/components/_global.scss */
+a {
+  color: #ff9e80;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* line 19, C:/Projekte/volleyball/sass/components/_global.scss */
+.valign-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+/* line 23, C:/Projekte/volleyball/sass/components/_global.scss */
+.valign-wrapper .valign {
+  display: block;
+}
+
+/* line 29, C:/Projekte/volleyball/sass/components/_global.scss */
+ul {
+  padding: 0;
+}
+
+/* line 31, C:/Projekte/volleyball/sass/components/_global.scss */
+ul li {
+  list-style-type: none;
+}
+
+/* line 37, C:/Projekte/volleyball/sass/components/_global.scss */
+.clearfix {
+  clear: both;
+}
+
+/* line 43, C:/Projekte/volleyball/sass/components/_global.scss */
+.z-depth-0 {
+  box-shadow: none !important;
+}
+
+/* line 46, C:/Projekte/volleyball/sass/components/_global.scss */
+.z-depth-1 {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+/* line 49, C:/Projekte/volleyball/sass/components/_global.scss */
+.z-depth-1-half {
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+}
+
+/* line 52, C:/Projekte/volleyball/sass/components/_global.scss */
+.z-depth-2 {
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* line 55, C:/Projekte/volleyball/sass/components/_global.scss */
+.z-depth-3 {
+  box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* line 58, C:/Projekte/volleyball/sass/components/_global.scss */
+.z-depth-4 {
+  box-shadow: 0 16px 28px 0 rgba(0, 0, 0, 0.22), 0 25px 55px 0 rgba(0, 0, 0, 0.21);
+}
+
+/* line 61, C:/Projekte/volleyball/sass/components/_global.scss */
+.z-depth-5 {
+  box-shadow: 0 27px 24px 0 rgba(0, 0, 0, 0.2), 0 40px 77px 0 rgba(0, 0, 0, 0.22);
+}
+
+/* line 65, C:/Projekte/volleyball/sass/components/_global.scss */
+.hoverable {
+  transition: box-shadow .25s;
+  box-shadow: 0;
+}
+
+/* line 70, C:/Projekte/volleyball/sass/components/_global.scss */
+.hoverable:hover {
+  transition: box-shadow .25s;
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* line 77, C:/Projekte/volleyball/sass/components/_global.scss */
+.divider {
+  height: 1px;
+  overflow: hidden;
+  background-color: #e0e0e0;
+}
+
+/* line 86, C:/Projekte/volleyball/sass/components/_global.scss */
+blockquote {
+  margin: 20px 0;
+  padding-left: 1.5rem;
+  border-left: 5px solid #8bc34a;
+}
+
+/* line 94, C:/Projekte/volleyball/sass/components/_global.scss */
+i {
+  line-height: inherit;
+}
+
+/* line 97, C:/Projekte/volleyball/sass/components/_global.scss */
+i.left {
+  float: left;
+  margin-right: 15px;
+}
+
+/* line 101, C:/Projekte/volleyball/sass/components/_global.scss */
+i.right {
+  float: right;
+  margin-left: 15px;
+}
+
+/* line 105, C:/Projekte/volleyball/sass/components/_global.scss */
+i.tiny {
+  font-size: 1rem;
+}
+
+/* line 108, C:/Projekte/volleyball/sass/components/_global.scss */
+i.small {
+  font-size: 2rem;
+}
+
+/* line 111, C:/Projekte/volleyball/sass/components/_global.scss */
+i.medium {
+  font-size: 4rem;
+}
+
+/* line 114, C:/Projekte/volleyball/sass/components/_global.scss */
+i.large {
+  font-size: 6rem;
+}
+
+/* line 120, C:/Projekte/volleyball/sass/components/_global.scss */
+img.responsive-img,
+video.responsive-video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 131, C:/Projekte/volleyball/sass/components/_global.scss */
+.pagination li {
+  display: inline-block;
+  border-radius: 2px;
+  text-align: center;
+  vertical-align: top;
+  height: 30px;
+}
+
+/* line 138, C:/Projekte/volleyball/sass/components/_global.scss */
+.pagination li a {
+  color: #444;
+  display: inline-block;
+  font-size: 1.2rem;
+  padding: 0 10px;
+  line-height: 30px;
+}
+
+/* line 146, C:/Projekte/volleyball/sass/components/_global.scss */
+.pagination li.active a {
+  color: #fff;
+}
+
+/* line 148, C:/Projekte/volleyball/sass/components/_global.scss */
+.pagination li.active {
+  background-color: #8bc34a;
+}
+
+/* line 150, C:/Projekte/volleyball/sass/components/_global.scss */
+.pagination li.disabled a {
+  cursor: default;
+  color: #999;
+}
+
+/* line 155, C:/Projekte/volleyball/sass/components/_global.scss */
+.pagination li i {
+  font-size: 2rem;
+}
+
+/* line 161, C:/Projekte/volleyball/sass/components/_global.scss */
+.pagination li.pages ul li {
+  display: inline-block;
+  float: none;
+}
+
+@media only screen and (max-width: 992px) {
+  /* line 167, C:/Projekte/volleyball/sass/components/_global.scss */
+  .pagination {
+    width: 100%;
+  }
+  /* line 170, C:/Projekte/volleyball/sass/components/_global.scss */
+  .pagination li.prev,
+  .pagination li.next {
+    width: 10%;
+  }
+  /* line 175, C:/Projekte/volleyball/sass/components/_global.scss */
+  .pagination li.pages {
+    width: 80%;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+}
+
+/* line 184, C:/Projekte/volleyball/sass/components/_global.scss */
+.breadcrumb {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* line 188, C:/Projekte/volleyball/sass/components/_global.scss */
+.breadcrumb i,
+.breadcrumb [class^="mdi-"], .breadcrumb [class*="mdi-"],
+.breadcrumb i.material-icons {
+  display: inline-block;
+  float: left;
+  font-size: 24px;
+}
+
+/* line 196, C:/Projekte/volleyball/sass/components/_global.scss */
+.breadcrumb:before {
+  content: '\E5CC';
+  color: rgba(255, 255, 255, 0.7);
+  vertical-align: top;
+  display: inline-block;
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 25px;
+  margin: 0 10px 0 8px;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 209, C:/Projekte/volleyball/sass/components/_global.scss */
+.breadcrumb:first-child:before {
+  display: none;
+}
+
+/* line 213, C:/Projekte/volleyball/sass/components/_global.scss */
+.breadcrumb:last-child {
+  color: #fff;
+}
+
+/* line 220, C:/Projekte/volleyball/sass/components/_global.scss */
+.parallax-container {
+  position: relative;
+  overflow: hidden;
+  height: 500px;
+}
+
+/* line 226, C:/Projekte/volleyball/sass/components/_global.scss */
+.parallax {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+/* line 234, C:/Projekte/volleyball/sass/components/_global.scss */
+.parallax img {
+  display: none;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  transform: translateX(-50%);
+}
+
+/* line 248, C:/Projekte/volleyball/sass/components/_global.scss */
+.pin-top, .pin-bottom {
+  position: relative;
+}
+
+/* line 251, C:/Projekte/volleyball/sass/components/_global.scss */
+.pinned {
+  position: fixed !important;
+}
+
+/*********************
+  Transition Classes
+**********************/
+/* line 259, C:/Projekte/volleyball/sass/components/_global.scss */
+ul.staggered-list li {
+  opacity: 0;
+}
+
+/* line 263, C:/Projekte/volleyball/sass/components/_global.scss */
+.fade-in {
+  opacity: 0;
+  transform-origin: 0 50%;
+}
+
+/*********************
+  Media Query Classes
+**********************/
+@media only screen and (max-width: 600px) {
+  /* line 272, C:/Projekte/volleyball/sass/components/_global.scss */
+  .hide-on-small-only, .hide-on-small-and-down {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  /* line 277, C:/Projekte/volleyball/sass/components/_global.scss */
+  .hide-on-med-and-down {
+    display: none !important;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  /* line 282, C:/Projekte/volleyball/sass/components/_global.scss */
+  .hide-on-med-and-up {
+    display: none !important;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+  /* line 287, C:/Projekte/volleyball/sass/components/_global.scss */
+  .hide-on-med-only {
+    display: none !important;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  /* line 292, C:/Projekte/volleyball/sass/components/_global.scss */
+  .hide-on-large-only {
+    display: none !important;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  /* line 297, C:/Projekte/volleyball/sass/components/_global.scss */
+  .show-on-large {
+    display: block !important;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+  /* line 302, C:/Projekte/volleyball/sass/components/_global.scss */
+  .show-on-medium {
+    display: block !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  /* line 307, C:/Projekte/volleyball/sass/components/_global.scss */
+  .show-on-small {
+    display: block !important;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  /* line 312, C:/Projekte/volleyball/sass/components/_global.scss */
+  .show-on-medium-and-up {
+    display: block !important;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  /* line 317, C:/Projekte/volleyball/sass/components/_global.scss */
+  .show-on-medium-and-down {
+    display: block !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  /* line 325, C:/Projekte/volleyball/sass/components/_global.scss */
+  .center-on-small-only {
+    text-align: center;
+  }
+}
+
+/*******************
+  Utility Classes
+*******************/
+/* line 335, C:/Projekte/volleyball/sass/components/_global.scss */
+.hide {
+  display: none !important;
+}
+
+/* line 340, C:/Projekte/volleyball/sass/components/_global.scss */
+.left-align {
+  text-align: left;
+}
+
+/* line 343, C:/Projekte/volleyball/sass/components/_global.scss */
+.right-align {
+  text-align: right;
+}
+
+/* line 346, C:/Projekte/volleyball/sass/components/_global.scss */
+.center, .center-align {
+  text-align: center;
+}
+
+/* line 350, C:/Projekte/volleyball/sass/components/_global.scss */
+.left {
+  float: left !important;
+}
+
+/* line 353, C:/Projekte/volleyball/sass/components/_global.scss */
+.right {
+  float: right !important;
+}
+
+/* line 358, C:/Projekte/volleyball/sass/components/_global.scss */
+.no-select {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* line 367, C:/Projekte/volleyball/sass/components/_global.scss */
+.circle {
+  border-radius: 50%;
+}
+
+/* line 371, C:/Projekte/volleyball/sass/components/_global.scss */
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 377, C:/Projekte/volleyball/sass/components/_global.scss */
+.truncate {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* line 384, C:/Projekte/volleyball/sass/components/_global.scss */
+.no-padding {
+  padding: 0 !important;
+}
+
+/* line 388, C:/Projekte/volleyball/sass/components/_global.scss */
+.position-absolute, #page-main .main {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+/* line 1, C:/Projekte/volleyball/sass/components/_appbar.scss */
+.app-bar {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.16);
+  color: #fff;
+  background-color: #8bc34a;
+  height: 56px;
+  line-height: 56px;
+  padding: 4px;
+  overflow: hidden;
+  /* Icons */
+}
+
+@media only screen and (orientation: landscape) and (max-width: 960px) {
+  /* line 1, C:/Projekte/volleyball/sass/components/_appbar.scss */
+  .app-bar {
+    height: 48px;
+    line-height: 48px;
+    padding: 0;
+  }
+}
+
+@media only screen and (orientation: portrait) and (min-width: 600px), only screen and (orientation: landscape) and (min-width: 960px) {
+  /* line 1, C:/Projekte/volleyball/sass/components/_appbar.scss */
+  .app-bar {
+    height: 64px;
+    line-height: 64px;
+    padding: 8px 12px;
+  }
+}
+
+/* line 23, C:/Projekte/volleyball/sass/components/_appbar.scss */
+.app-bar .left, .app-bar .right {
+  height: 100%;
+  line-height: 48px;
+}
+
+/* line 29, C:/Projekte/volleyball/sass/components/_appbar.scss */
+.app-bar .mbsc-ic {
+  font-size: 2rem;
+  display: inline-block;
+  text-align: center;
+  height: 48px;
+  width: 48px;
+  line-height: 48px;
+}
+
+/* line 38, C:/Projekte/volleyball/sass/components/_appbar.scss */
+.app-bar .mbsc-ic:active {
+  background-color: #95c859;
+}
+
+/* line 42, C:/Projekte/volleyball/sass/components/_appbar.scss */
+.app-bar .title {
+  padding-left: 20px;
+  font-size: 21px;
+  font-weight: 500;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  line-height: 48px;
+}
+
+@media only screen and (orientation: portrait) and (min-width: 600px), only screen and (orientation: landscape) and (min-width: 960px) {
+  /* line 42, C:/Projekte/volleyball/sass/components/_appbar.scss */
+  .app-bar .title {
+    padding-left: 24px;
+  }
+}
+
+/* line 1, C:/Projekte/volleyball/sass/components/_listview.scss */
+.lv, .lv-avatar {
+  padding: 0 16px;
+}
+
+/* line 3, C:/Projekte/volleyball/sass/components/_listview.scss */
+.lv .lv-item, .lv-avatar .lv-item {
+  padding-left: 56px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-size: 16px;
+  font-weight: 400;
+  height: 72px;
+  line-height: 56px;
+}
+
+/* line 17, C:/Projekte/volleyball/sass/components/_listview.scss */
+.lv-avatar .lv-item {
+  height: 30px;
+  line-height: 14px;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: local(Roboto Thin), url("../fonts/roboto/Roboto-Thin.eot");
+  src: url("../fonts/roboto/Roboto-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto/Roboto-Thin.woff2") format("woff2"), url("../fonts/roboto/Roboto-Thin.woff") format("woff"), url("../fonts/roboto/Roboto-Thin.ttf") format("truetype");
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: local(Roboto Light), url("../fonts/roboto/Roboto-Light.eot");
+  src: url("../fonts/roboto/Roboto-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto/Roboto-Light.woff2") format("woff2"), url("../fonts/roboto/Roboto-Light.woff") format("woff"), url("../fonts/roboto/Roboto-Light.ttf") format("truetype");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: local(Roboto Regular), url("../fonts/roboto/Roboto-Regular.eot");
+  src: url("../fonts/roboto/Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto/Roboto-Regular.woff2") format("woff2"), url("../fonts/roboto/Roboto-Regular.woff") format("woff"), url("../fonts/roboto/Roboto-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/roboto/Roboto-Medium.eot");
+  src: url("../fonts/roboto/Roboto-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto/Roboto-Medium.woff2") format("woff2"), url("../fonts/roboto/Roboto-Medium.woff") format("woff"), url("../fonts/roboto/Roboto-Medium.ttf") format("truetype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/roboto/Roboto-Bold.eot");
+  src: url("../fonts/roboto/Roboto-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto/Roboto-Bold.woff2") format("woff2"), url("../fonts/roboto/Roboto-Bold.woff") format("woff"), url("../fonts/roboto/Roboto-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+
+/* line 2, C:/Projekte/volleyball/sass/components/_typography.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 6, C:/Projekte/volleyball/sass/components/_typography.scss */
+html {
+  line-height: 1.5;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+@media only screen and (min-width: 0) {
+  /* line 6, C:/Projekte/volleyball/sass/components/_typography.scss */
+  html {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  /* line 6, C:/Projekte/volleyball/sass/components/_typography.scss */
+  html {
+    font-size: 14.5px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  /* line 6, C:/Projekte/volleyball/sass/components/_typography.scss */
+  html {
+    font-size: 15px;
+  }
+}
+
+/* line 25, C:/Projekte/volleyball/sass/components/_typography.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+/* line 31, C:/Projekte/volleyball/sass/components/_typography.scss */
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  font-weight: inherit;
+}
+
+/* line 32, C:/Projekte/volleyball/sass/components/_typography.scss */
+h1 {
+  font-size: 4.2rem;
+  line-height: 110%;
+  margin: 2.1rem 0 1.68rem 0;
+}
+
+/* line 33, C:/Projekte/volleyball/sass/components/_typography.scss */
+h2 {
+  font-size: 3.56rem;
+  line-height: 110%;
+  margin: 1.78rem 0 1.424rem 0;
+}
+
+/* line 34, C:/Projekte/volleyball/sass/components/_typography.scss */
+h3 {
+  font-size: 2.92rem;
+  line-height: 110%;
+  margin: 1.46rem 0 1.168rem 0;
+}
+
+/* line 35, C:/Projekte/volleyball/sass/components/_typography.scss */
+h4 {
+  font-size: 2.28rem;
+  line-height: 110%;
+  margin: 1.14rem 0 0.912rem 0;
+}
+
+/* line 36, C:/Projekte/volleyball/sass/components/_typography.scss */
+h5 {
+  font-size: 1.64rem;
+  line-height: 110%;
+  margin: 0.82rem 0 0.656rem 0;
+}
+
+/* line 37, C:/Projekte/volleyball/sass/components/_typography.scss */
+h6 {
+  font-size: 1rem;
+  line-height: 110%;
+  margin: 0.5rem 0 0.4rem 0;
+}
+
+/* line 40, C:/Projekte/volleyball/sass/components/_typography.scss */
+em {
+  font-style: italic;
+}
+
+/* line 41, C:/Projekte/volleyball/sass/components/_typography.scss */
+strong {
+  font-weight: 500;
+}
+
+/* line 42, C:/Projekte/volleyball/sass/components/_typography.scss */
+small {
+  font-size: 75%;
+}
+
+/* line 43, C:/Projekte/volleyball/sass/components/_typography.scss */
+.light {
+  font-weight: 300;
+}
+
+/* line 44, C:/Projekte/volleyball/sass/components/_typography.scss */
+.thin {
+  font-weight: 200;
+}
+
+/* line 47, C:/Projekte/volleyball/sass/components/_typography.scss */
+.flow-text {
+  font-weight: 300;
+}
+
+@media only screen and (min-width: 360px) {
+  /* line 47, C:/Projekte/volleyball/sass/components/_typography.scss */
+  .flow-text {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (min-width: 390px) {
+  /* line 47, C:/Projekte/volleyball/sass/components/_typography.scss */
+  .flow-text {
+    font-size: 1.224rem;
+  }
+}
+
+@media only screen and (min-width: 420px) {
+  /* line 47, C:/Projekte/volleyball/sass/components/_typography.scss */
+  .flow-text {
+    font-size: 1.248rem;
+  }
+}
+
+@media only screen and (min-width: 450px) {
+  /* line 47, C:/Projekte/volleyball/sass/components/_typography.scss */
+  .flow-text {
+    font-size: 1.272rem;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  /* line 47, C:/Projekte/volleyball/sass/components/_typography.scss */
+  .flow-text {
+    font-size: 1.296rem;
+  }
+}
+
+@media only screen and (min-width: 510px) {
+  /* line 47, C:/Projekte/volleyball/sass/components/_typography.scss */
+  .flow-text {
+    font-size: 1.32rem;
+  }
+}
+
+@media only screen and (min-width: 540px) {
+  /* line 47, C:/Projekte/volleyball/sass/components/_typography.scss */
+  .flow-text {
+    font-size: 1.344rem;
+  }
+}
+
+@media only screen and (min-width: 570px) {
+  /* line 47, C:/Projekte/volleyball/sass/components/_typography.scss */
+  .flow-text {
+    font-size: 1.368rem;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  /* line 47, C:/Projekte/volleyball/sass/components/_typography.scss */
+  .flow-text {
+    font-size: 1.392rem;
+  }
+}
+
+@media only screen and (min-width: 630px) {
+  /* line 47, C:/Projekte/volleyball/sass/components/_typography.scss */
+  .flow-text {
+    font-size: 1.416rem;
+  }
+}
+
+@media only screen and (min-width: 660px) {
+  /* line 47, C:/Projekte/volleyball/sass/components/_typography.scss */
+  .flow-text {
+    font-size: 1.44rem;
+  }
+}
+
+@media only screen and (min-width: 690px) {
+  /* line 47, C:/Projekte/volleyball/sass/components/_typography.scss */
+  .flow-text {
+    font-size: 1.464rem;
+  }
+}
+
+@media only screen and (min-width: 720px) {
+  /* line 47, C:/Projekte/volleyball/sass/components/_typography.scss */
+  .flow-text {
+    font-size: 1.488rem;
+  }
+}
+
+@media only screen and (min-width: 750px) {
+  /* line 47, C:/Projekte/volleyball/sass/components/_typography.scss */
+  .flow-text {
+    font-size: 1.512rem;
+  }
+}
+
+@media only screen and (min-width: 780px) {
+  /* line 47, C:/Projekte/volleyball/sass/components/_typography.scss */
+  .flow-text {
+    font-size: 1.536rem;
+  }
+}
+
+@media only screen and (min-width: 810px) {
+  /* line 47, C:/Projekte/volleyball/sass/components/_typography.scss */
+  .flow-text {
+    font-size: 1.56rem;
+  }
+}
+
+@media only screen and (min-width: 840px) {
+  /* line 47, C:/Projekte/volleyball/sass/components/_typography.scss */
+  .flow-text {
+    font-size: 1.584rem;
+  }
+}
+
+@media only screen and (min-width: 870px) {
+  /* line 47, C:/Projekte/volleyball/sass/components/_typography.scss */
+  .flow-text {
+    font-size: 1.608rem;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  /* line 47, C:/Projekte/volleyball/sass/components/_typography.scss */
+  .flow-text {
+    font-size: 1.632rem;
+  }
+}
+
+@media only screen and (min-width: 930px) {
+  /* line 47, C:/Projekte/volleyball/sass/components/_typography.scss */
+  .flow-text {
+    font-size: 1.656rem;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  /* line 47, C:/Projekte/volleyball/sass/components/_typography.scss */
+  .flow-text {
+    font-size: 1.68rem;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  /* line 47, C:/Projekte/volleyball/sass/components/_typography.scss */
+  .flow-text {
+    font-size: 1.2rem;
+  }
+}
+
+/* line 63, C:/Projekte/volleyball/sass/components/_typography.scss */
+.subtitle {
+  line-height: 48px;
+  height: 48px;
+  width: 100%;
+  padding-left: 16px;
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.54);
+}
+
+/* line 1, C:/Projekte/volleyball/sass/components/_page.scss */
+body,
+.ui-dismiss,
+.ui-page,
+.ui-main,
+.ui-tabs {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* Overthrow CSS:
+   Enable overflow: auto on elements with overthrow class when html element has overthrow class too */
+/* line 18, C:/Projekte/volleyball/sass/components/_page.scss */
+.overthrow-enabled .overthrow {
+  overflow-y: scroll;
+  -webkit-transform: translate3d(0px, 0px, 0px);
+  transform: translate3d(0px, 0px, 0px);
+  -webkit-overflow-scrolling: touch;
+  -webkit-backface-visibility: hidden;
+  z-index: 0;
+}
+
+/* line 27, C:/Projekte/volleyball/sass/components/_page.scss */
+.ui-page,
+.ui-view {
+  /* display: none; */
+  -webkit-transform: translate3d(9000px, 0px, 0px);
+  transform: translate3d(9000px, 0px, 0px);
+}
+
+/* line 34, C:/Projekte/volleyball/sass/components/_page.scss */
+.ui-page-active,
+.ui-view-active {
+  -webkit-transform: translate3d(0px, 0px, 0px);
+  transform: translate3d(0px, 0px, 0px);
+}
+
+/* line 1, C:/Projekte/volleyball/sass/components/_panel.scss */
+.ui-panel {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  max-width: 280px;
+  z-index: 100;
+}
+
+/* line 11, C:/Projekte/volleyball/sass/components/_panel.scss */
+.ui-dismiss {
+  display: none;
+  z-index: 99;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Left Panel */
+/* line 18, C:/Projekte/volleyball/sass/components/_panel.scss */
+.ui-panel-left {
+  -webkit-transform: translate(-280px, 0);
+  transform: translate(-280px, 0);
+  right: 56px;
+  box-shadow: 8px 0 16px 0 rgba(0, 0, 0, 0.16);
+}
+
+/* line 25, C:/Projekte/volleyball/sass/components/_panel.scss */
+.no-csstransforms3d .ui-panel-left.ui-panel-open {
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+
+/* 3D transforms support: translate3d benutzen */
+/* line 31, C:/Projekte/volleyball/sass/components/_panel.scss */
+.csstransforms3d .ui-panel-left {
+  -webkit-transform: translate3d(-280px, 0, 0);
+  transform: translate3d(-280px, 0, 0);
+}
+
+/* line 36, C:/Projekte/volleyball/sass/components/_panel.scss */
+.csstransforms3d .ui-panel-left.ui-panel-open {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+/* Right Panel */
+/* line 42, C:/Projekte/volleyball/sass/components/_panel.scss */
+.ui-panel-right {
+  left: 56px;
+  box-shadow: -4px 0 4px 0 rgba(0, 0, 0, 0.16);
+  -webkit-transform: translate(280px, 0);
+  transform: translate(280px, 0);
+}
+
+/* line 49, C:/Projekte/volleyball/sass/components/_panel.scss */
+.no-csstransforms3d .ui-panel-right.ui-panel-open {
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+
+/* 3D transforms support: translate3d benutzen */
+/* line 55, C:/Projekte/volleyball/sass/components/_panel.scss */
+.csstransforms3d .ui-panel-right {
+  -webkit-transform: translate3d(280px, 0, 0);
+  transform: translate3d(280px, 0, 0);
+}
+
+/* line 60, C:/Projekte/volleyball/sass/components/_panel.scss */
+.csstransforms3d .ui-panel-right.ui-panel-open {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+/* Animation */
+/* line 66, C:/Projekte/volleyball/sass/components/_panel.scss */
+.ui-panel-animate {
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+
+/* line 1, C:/Projekte/volleyball/sass/panel/_menu.scss */
+#panel-menu {
+  background: #fafafa;
+}
+
+/* line 4, C:/Projekte/volleyball/sass/panel/_menu.scss */
+#panel-menu .header {
+  height: 11.33333em;
+  background: url("../img/bvc-mank.at.jpg") no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+}
+
+/* line 14, C:/Projekte/volleyball/sass/panel/_menu.scss */
+#panel-menu .header .subtitle {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 16px;
+  line-height: 20px;
+  height: 50px;
+  color: #fff;
+  font-size: 14px;
+}
+
+/* line 25, C:/Projekte/volleyball/sass/panel/_menu.scss */
+#panel-menu .header .subtitle .club {
+  font-weight: 500;
+  display: block;
+}
+
+/* line 30, C:/Projekte/volleyball/sass/panel/_menu.scss */
+#panel-menu .header .subtitle .name {
+  font-weight: 400;
+  display: block;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* line 37, C:/Projekte/volleyball/sass/panel/_menu.scss */
+#panel-menu .header .mbsc-ic {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 1.8rem;
+  text-align: center;
+  height: 48px;
+  width: 48px;
+  line-height: 48px;
+  color: #fff;
+}
+
+/* line 49, C:/Projekte/volleyball/sass/panel/_menu.scss */
+#panel-menu .header .mbsc-ic:active {
+  background-color: #6b6b6b;
+}
+
+/* line 56, C:/Projekte/volleyball/sass/panel/_menu.scss */
+#panel-menu .lv-menu .lv-item {
+  position: relative;
+  padding: 0 16px 0 72px;
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.87);
+  height: 48px;
+  line-height: 48px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+/* line 67, C:/Projekte/volleyball/sass/panel/_menu.scss */
+#panel-menu .lv-menu .lv-item:active {
+  background-color: #f0f0f0;
+}
+
+/* line 71, C:/Projekte/volleyball/sass/panel/_menu.scss */
+#panel-menu .lv-menu .mbsc-ic {
+  position: absolute;
+  left: 16px;
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.54);
+  display: block;
+  width: 16px;
+}
+
+/* line 1, C:/Projekte/volleyball/sass/page/_intro.scss */
+#page-intro {
+  background: #8bc34a;
+  width: 100%;
+  height: 100%;
+  display: table;
+  text-align: center;
+}
+
+/* line 8, C:/Projekte/volleyball/sass/page/_intro.scss */
+#page-intro div {
+  display: table-cell;
+  vertical-align: middle;
+  white-space: nowrap;
+  font-size: 3em;
+  color: #fff;
+  font-weight: 100;
+  -webkit-text-shadow: -1px 1px 8px #fff, 1px -1px 80px #eee;
+  text-shadow: -1px 1px 8px #fff, 1px -1px 80px #eee;
+}
+
+/* line 19, C:/Projekte/volleyball/sass/page/_intro.scss */
+#page-intro span {
+  font-weight: 300;
+}
+
+/* line 2, C:/Projekte/volleyball/sass/page/_main.scss */
+#page-main .main {
+  top: 128px;
+}
+
+/* line 6, C:/Projekte/volleyball/sass/page/_main.scss */
+#page-main .main .empty {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.54);
+  display: none;
+}
+
+/* line 13, C:/Projekte/volleyball/sass/page/_main.scss */
+#page-main .main .empty .cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/* line 17, C:/Projekte/volleyball/sass/page/_main.scss */
+#page-main .main .empty .mbsc-ic {
+  font-size: 150px;
+  color: #c9c9c9;
+}
+
+/* line 23, C:/Projekte/volleyball/sass/page/_main.scss */
+#page-main .main .overthrow {
+  position: absolute;
+  top: 48px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/* line 33, C:/Projekte/volleyball/sass/page/_main.scss */
+#page-main .view-state {
+  background-color: #8bc34a;
+  color: #fff;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.16);
+}
+
+/* line 39, C:/Projekte/volleyball/sass/page/_main.scss */
+#page-main .mbsc-desc {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* line 43, C:/Projekte/volleyball/sass/page/_main.scss */
+#page-main.mbsc-volleyball .mbsc-switch input:checked + .mbsc-switch-track .mbsc-switch-handle {
+  background: #ff3d00;
+}
+
+/* line 2, C:/Projekte/volleyball/sass/page/_detail.scss */
+#page-detail .app-bar {
+  box-shadow: none;
+}
+
+/* line 5, C:/Projekte/volleyball/sass/page/_detail.scss */
+#page-detail .view-state {
+  background-color: #8bc34a;
+  color: #fff;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.16);
+}
+
+/* line 10, C:/Projekte/volleyball/sass/page/_detail.scss */
+#page-detail .mbsc-desc {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* line 14, C:/Projekte/volleyball/sass/page/_detail.scss */
+#page-detail .overthrow {
+  position: absolute;
+  top: 206px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/* line 22, C:/Projekte/volleyball/sass/page/_detail.scss */
+#page-detail .time.disabled {
+  color: rgba(255, 255, 255, 0.38);
+}
+
+/* line 26, C:/Projekte/volleyball/sass/page/_detail.scss */
+#page-detail .lv-timetable {
+  padding: 0 16px;
+  line-height: 22px;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+/* line 32, C:/Projekte/volleyball/sass/page/_detail.scss */
+#page-detail .lv-timetable .subtitle {
+  padding-left: 0;
+}
+
+/* line 36, C:/Projekte/volleyball/sass/page/_detail.scss */
+#page-detail .lv-timetable .lv-item {
+  position: relative;
+  padding-left: 72px;
+  min-height: 44px;
+  margin-bottom: 12px;
+}
+
+/* line 42, C:/Projekte/volleyball/sass/page/_detail.scss */
+#page-detail .lv-timetable .lv-item .begin, #page-detail .lv-timetable .lv-item .end {
+  position: absolute;
+  font-weight: 600;
+  width: 72px;
+  text-align: center;
+  left: 0;
+}
+
+/* line 49, C:/Projekte/volleyball/sass/page/_detail.scss */
+#page-detail .lv-timetable .lv-item .begin {
+  top: 0;
+}
+
+/* line 52, C:/Projekte/volleyball/sass/page/_detail.scss */
+#page-detail .lv-timetable .lv-item .end {
+  bottom: 0;
+}
+
+/* line 55, C:/Projekte/volleyball/sass/page/_detail.scss */
+#page-detail .lv-timetable .lv-item .title {
+  font-weight: 600;
+}
+
+/* line 58, C:/Projekte/volleyball/sass/page/_detail.scss */
+#page-detail .lv-timetable .lv-item .people {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.54);
+}
+
+/* line 2, C:/Projekte/volleyball/sass/page/_profile.scss */
+#page-profile .app-bar {
+  margin-bottom: 1em;
+}
+
+/* line 1, C:/Projekte/volleyball/sass/page/_register.scss */
+#page-register {
+  background: #fafafa;
+}
+
+/* line 4, C:/Projekte/volleyball/sass/page/_register.scss */
+#page-register h2 {
+  text-align: center;
+  color: #8bc34a;
+  font-weight: 100;
+  padding: .5em;
+}
+
+/* line 11, C:/Projekte/volleyball/sass/page/_register.scss */
+#page-register .step1 h2 {
+  text-align: left;
+}
+
+/* line 15, C:/Projekte/volleyball/sass/page/_register.scss */
+#page-register p {
+  padding: 0 1em;
+}
+
+/* line 19, C:/Projekte/volleyball/sass/page/_register.scss */
+#page-register .mbsc-btn-group {
+  margin-top: 2em;
+}
+
+/* line 23, C:/Projekte/volleyball/sass/page/_register.scss */
+#page-register .mbsc-err-msg {
+  display: none;
+}
+
+/* line 2, C:/Projekte/volleyball/sass/page/_terms.scss */
+#page-terms .app-bar {
+  margin-bottom: 1em;
+}
+
+/* line 5, C:/Projekte/volleyball/sass/page/_terms.scss */
+#page-terms p {
+  font-size: 16px;
+  padding: .5em 1em;
+}
+
+/* line 1, C:/Projekte/volleyball/sass/widget/_changes.scss */
+.widget-changes {
+  font-size: 16px;
+}
+
+/*# sourceMappingURL=../www/css/main.map */
