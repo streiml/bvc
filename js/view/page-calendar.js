@@ -63,7 +63,8 @@ define([
             Subscripitions
         */        		
 		observer.subscribe("calendar/update", function(e, calendar) {
-			console.log("page-calendar: event 'calendar/update' received...");         
+			console.log("page-calendar: event 'calendar/update' received...");   
+            console.log(calendar);      
             that.refresh();
 		});	        
 	}	

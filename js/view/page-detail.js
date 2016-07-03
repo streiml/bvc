@@ -105,13 +105,13 @@ define([
                 this.mbscSwitch.setVal(true);
                 $timeLabel.removeClass("disabled");
                 $timeBegin.prop("disabled", false);
-                $state.html(messages["USER.ONLINE"]);                       
+                $state.html(messages["STATE.AVAILABLE"]);                       
             }
             else {
                 this.mbscSwitch.setVal(false);
                 $timeLabel.addClass("disabled");
                 $timeBegin.prop("disabled", true);                
-                $state.html(messages["USER.OFFLINE"]);                       
+                $state.html(messages["STATE.OFFLINE"]);                       
             }
             
             this.updateTime(time);

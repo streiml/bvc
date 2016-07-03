@@ -1,4 +1,4 @@
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="at.back2nature.bvc" version="0.0.2">
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="at.back2nature.bvc" version="0.0.3">
   <name>BVC Mank</name>
   <description>BVC Mank</description>
   <author href="http://phonegap.com" email="gerald.streimelweger@gmail.com">Gerald Streimelweger</author>
@@ -20,7 +20,6 @@
   <preference name="android-installLocation" value="auto"/>
 
   <gap:plugin name="org.apache.cordova.network-information"/>
-  <gap:plugin name="org.apache.cordova.splashscreen"/>
 
   <icon src="icon.png"/>
   <icon src="/res/icons/android/icon-36-ldpi.png" gap:platform="android" gap:qualifier="ldpi"/>
@@ -36,23 +35,12 @@
   <icon src="/res/icons/webos/icon-64.png" gap:platform="webos"/>
   <icon src="/res/icons/windows-phone/icon-48.png" gap:platform="winphone"/>
   <icon src="/res/icons/windows-phone/icon-173-tile.png" gap:platform="winphone" gap:role="background"/>
-  
-  <gap:splash src="splash.png" />  
-  <gap:splash src="/res/screens/android/screen-ldpi-portrait.png" gap:platform="android" gap:qualifier="port-ldpi"/>
-  <gap:splash src="/res/screens/android/screen-mdpi-portrait.png" gap:platform="android" gap:qualifier="port-mdpi"/>
-  <gap:splash src="/res/screens/android/screen-hdpi-portrait.png" gap:platform="android" gap:qualifier="port-hdpi"/>
-  <gap:splash src="/res/screens/android/screen-xhdpi-portrait.png" gap:platform="android" gap:qualifier="port-xhdpi"/>
-  <gap:splash src="/res/screens/blackberry/screen-225.png" gap:platform="blackberry"/>
-  <gap:splash src="/res/screens/ios/screen-iphone-portrait.png" gap:platform="ios" width="320" height="480"/>
-  <gap:splash src="/res/screens/ios/screen-iphone-portrait-2x.png" gap:platform="ios" width="640" height="960"/>
-  <gap:splash src="/res/screens/ios/screen-iphone-portrait-568h-2x.png" gap:platform="ios" width="640" height="1136"/>
-  <gap:splash src="/res/screens/ios/screen-ipad-portrait.png" gap:platform="ios" width="768" height="1024"/>
-  <gap:splash src="/res/screens/ios/screen-ipad-landscape.png" gap:platform="ios" width="1024" height="768"/>
-  <gap:splash src="/res/screens/windows-phone/screen-portrait.jpg" gap:platform="winphone"/>
+
   <access origin="*"/>
   <plugin name="cordova-plugin-whitelist" version="1"/>
         <!-- Access to the subdomain maps.google.com -->
 	<access origin="http://*.smileupps.com"  subdomains="true"/>
+	<access origin="https://*.smileupps.com"  subdomains="true"/>
 	<!-- Access to all the subdomains on google.com -->
 	<access origin="http://*.google.com" subdomains="true"/>  
   <allow-intent href="http://*/*"/>

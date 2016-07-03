@@ -8,8 +8,9 @@ define([
     'model/user',
     'model/club',
 	'view/page',
+    "text!html/widget-welcome.html",     
     'i18n!nls/messages'    
-], function($, mobiscroll, settings, observer, tap, calendar, user, club, Page, messages) {
+], function($, mobiscroll, settings, observer, tap, calendar, user, club, Page, htmlWelcome, messages) {
 	'use strict';
 	console.log("loading module 'view/page-main'...");
 	 /**
@@ -17,14 +18,17 @@ define([
      */
 	function PageMain (id) {
 		var $page   	= $("#page-main"),
+            $wgWelcome  = $(htmlWelcome),   
 			$btnMenu	= $(".mbsc-ic-material-menu", $page),
             $btnOnline 	= $("#btn-online", $page),
             $txtOnline  = $(".mbsc-desc", $page),
             $onlineUser = $(".lv-avatar", $page),
             $empty      = $(".empty", $page),
+            $subtitle   = $(".subtitle", $page),
             users       = {},
             updating    = false,
-            that        = this;
+            that        = this,
+            mbscWidgetWelcome;
 		
 		Page.call(this, id, $page);
         
@@ -32,8 +36,23 @@ define([
         
         this.mbscSwitch = mobiscroll.switch($btnOnline);
         
+        mbscWidgetWelcome = mobiscroll.widget($wgWelcome, {
+            theme: 'volleyball-green',
+            display: 'center',
+            buttons: [{
+                text: 'Schliessen',
+                handler: 'cancel'
+            }],
+            onShow: function (event, inst) {
+                settings.write("APP.WELCOME", true);
+            }            
+        });         
+        
         this.open = function() {
             club.getOnlineUsers();
+            if (!settings.read("APP.WELCOME")) {
+                mbscWidgetWelcome.show();
+            }
         }
               
         
@@ -56,7 +75,9 @@ define([
                 li[li.length] = '<li class="lv-item">' + users[email] + '</li>';
             }
             li.sort();
+            
             $onlineUser.html(li.join(''));
+            $subtitle.html(messages["USER.ONLINE"] + " (" + li.length + ")" );
             
             if (li.length > 0) {
                 $empty.css("display", "none");
@@ -69,7 +90,7 @@ define([
         this.setState = function(state) {
             updating = true;
             this.mbscSwitch.setVal(state);
-            $txtOnline.html(state ? messages["USER.ONLINE"] : messages["USER.OFFLINE"]);
+            $txtOnline.html(state ? messages["STATE.ONLINE"] : messages["STATE.OFFLINE"]);
             updating = false;
         }        
         

@@ -10,8 +10,7 @@ define([
             remote  = new PouchDB('https://couchdb-e30c29.smileupps.com/user',
                        {
                            "auth.username": "admin",
-                           "auth.password": "43992a0c490c",
-                           "ajax.cache": true
+                           "auth.password": "43992a0c490c"
                        }),
             that    = this;   
                  

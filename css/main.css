@@ -2237,16 +2237,16 @@ body,
   display: table-cell;
   vertical-align: middle;
   white-space: nowrap;
-  font-size: 3em;
+  font-size: 4em;
   color: #fff;
-  font-weight: 100;
+  font-weight: 200;
   -webkit-text-shadow: -1px 1px 8px #fff, 1px -1px 80px #eee;
   text-shadow: -1px 1px 8px #fff, 1px -1px 80px #eee;
 }
 
 /* line 19, C:/Projekte/volleyball/sass/page/_intro.scss */
 #page-intro span {
-  font-weight: 300;
+  font-weight: 400;
 }
 
 /* line 2, C:/Projekte/volleyball/sass/page/_main.scss */
@@ -2423,19 +2423,37 @@ body,
 }
 
 /* line 2, C:/Projekte/volleyball/sass/page/_terms.scss */
-#page-terms .app-bar {
-  margin-bottom: 1em;
-}
-
-/* line 5, C:/Projekte/volleyball/sass/page/_terms.scss */
 #page-terms p {
   font-size: 16px;
   padding: .5em 1em;
 }
 
+/* line 6, C:/Projekte/volleyball/sass/page/_terms.scss */
+#page-terms h2 {
+  font-size: 1.1em;
+  background: #eee;
+  padding: .7em 1em;
+  margin: 0;
+}
+
 /* line 1, C:/Projekte/volleyball/sass/widget/_changes.scss */
 .widget-changes {
   font-size: 16px;
+}
+
+/* line 1, C:/Projekte/volleyball/sass/widget/_logout.scss */
+.widget-logout {
+  font-size: 16px;
+}
+
+/* line 2, C:/Projekte/volleyball/sass/widget/_welcome.scss */
+.widget-welcome h2 {
+  font-size: 1.5em;
+}
+
+/* line 5, C:/Projekte/volleyball/sass/widget/_welcome.scss */
+.widget-welcome p {
+  padding-bottom: 1em;
 }
 
 /*# sourceMappingURL=../www/css/main.map */

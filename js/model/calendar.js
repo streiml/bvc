@@ -14,8 +14,7 @@ define([
             remote  = new PouchDB('https://couchdb-e30c29.smileupps.com/' + dbName,
                        {
                            "auth.username": "admin",
-                           "auth.password": "43992a0c490c",
-                           "ajax.cache": true
+                           "auth.password": "43992a0c490c"
                        }),
             today   = new Date(),
             that    = this;        
@@ -30,17 +29,27 @@ define([
             }).on('change', function(result) {
                 // handle change
                 console.log("calendar: db.changes()");
-                result.change.docs.map(function (doc) {                 
-                    var id   = doc._id,
-                        tokens = id.split('-'),
-                        year   = +tokens[0],
-                        month  = +tokens[1];
-
-                    if (year == that.year && (month-1) == that.month) {
-                        console.log(doc.members);
-                        that.calendar[id] = doc.members;
-                        observer.notify("calendar/update", that.calendar);
-                    }
+                console.log(result);
+                result.change.docs.map(function (doc) {
+                    var id      = doc._id,
+                        parts   = id.split('#'),
+                        day     = parts[0],
+                        user    = parts[1],
+                        tokens  = day.split('-'),
+                        year    = +tokens[0],
+                        month   = +tokens[1],
+                        members = that.calendar[day] || {};
+                        
+                    if ("_deleted" in doc) {
+                        delete members[user];
+                        that.calendar[day] = members;
+                    } 
+                    else if (year == that.year && (month-1) == that.month) {
+                        console.log(doc.day);
+                        members[doc.user] = doc.time;
+                        that.calendar[id] = members;
+                    } 
+                    observer.notify("calendar/update", that.calendar);                                                          
                 });
             }).on('complete', function(info) {
                 console.log(info);
@@ -69,8 +78,12 @@ define([
                 endkey:   mobiscroll.util.datetime.formatDate('yy-mm-dd', end)
             }).then(function (result) {
                 that.calendar = {};
-                result.rows.map(function (row) { 
-                    that.calendar[row.id] = row.doc.members || {}; 
+                result.rows.map(function (row) {
+                    var doc = row.doc;
+                    console.log(doc);
+                    var members = that.calendar[doc.day] || {};
+                    members[doc.user] = doc.time; 
+                    that.calendar[doc.day] = members; 
                 });                
                 observer.notify("calendar/update", that.calendar);
             }).catch(function(error) {
@@ -99,7 +112,7 @@ define([
             var events = [];
             
             for (var d in this.calendar) {
-                var members = this.calendar[d],
+                var members = this.calendar[d] || {},
                     count   = Object.keys(members).length;
                 
                 if (count > 0) {   
@@ -112,8 +125,29 @@ define([
             }            
             return events;
         }
-       
-                        
+
+        this.save = function(info) {
+            var day     = info.getDay(),
+                user    = info.getUser(),
+                time    = info.getTime(),
+                id      = day + "#" + user;
+            console.log(info);
+            if (info.isActive()) {
+                db.upsert(id, function(doc){
+                    doc.day = day;
+                    doc.user = user;
+                    doc.time = time;
+                    return doc;
+                }).catch(function (err) {});;                
+            }
+            else {
+                db.get(id).then(function(doc) {
+                    return db.remove(doc);
+                }).catch(function (err) {});
+            }
+        };  
+             
+        /*                
         this.save = function(info) {
             var day     = info.getDay(),
                 user    = info.getUser(),
@@ -122,23 +156,50 @@ define([
 
             //that.calendar[day] = members;
                 
-            db.get(day).then(function(doc) {
+            db.get(day, {conflicts: true}).then(function(doc) {                    
                 console.log("update calendar day...");
                 members = doc["members"];
-                if (info.isActive()) {
-                    members[user] = time;
+                function update() {
+                    if (info.isActive()) {
+                        members[user] = time;
+                    }
+                    else {
+                        delete members[user];                    
+                    }
+                    doc["members"] = members;
+                    // update calendar
+                    db.put(
+                        doc
+                    ).then(function() {
+                        console.log("update calendar day done");
+                        that.calendar[day] = members; 
+                    });                     
+                }
+
+                if ("_conflicts" in doc) {
+                    function loop(conflicts, i) {
+                        if (i < conflicts.length) {
+                            db.get(day, {rev: conflicts[i]}).then(function (result) {
+                                var _members = result["members"];
+                                for (var member in _members) {
+                                    
+                                }
+                                loop(conflicts, i+1);
+                            }).catch(function (err) {
+                            
+                            });                    
+                        }
+                        else {
+                            update();
+                        }
+                    }
+                    
+                    loop(doc["_conflicts"],0);
                 }
                 else {
-                    delete members[user];                    
+                    update();
                 }
-                doc["members"] = members;
-                // update calendar
-                db.put(
-                    doc
-                ).then(function() {
-                    console.log("update calendar day done");
-                    that.calendar[day] = members; 
-                });            
+           
             }).catch(function (err) {
                 console.log("new calendar day...");        
                 db.put({
@@ -150,6 +211,7 @@ define([
                 });             
             });                               
         }
+        */
         
         this.setDay(today);
     }
