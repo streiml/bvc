@@ -31,6 +31,8 @@ define([
 		this.mbscCalendar = mobiscroll.calendar($calendar, {
 			theme: 		'volleyball-green',
 			display: 	'inline',
+            firstDay:   1,
+            lang:       'de',
 			layout:  	'liquid',			
 			onPosition: function(event, inst) {
                var appbar   = 56,
