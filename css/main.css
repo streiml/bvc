@@ -1597,7 +1597,7 @@ ul.staggered-list li {
 }
 
 /* line 388, C:/Projekte/volleyball/sass/components/_global.scss */
-.position-absolute, #page-main .main {
+.position-absolute, #page-main .main, #page-profile .main, #page-register .main, #page-faq .main {
   position: absolute;
   left: 0;
   right: 0;
@@ -2384,9 +2384,24 @@ body,
   color: rgba(0, 0, 0, 0.54);
 }
 
+/* line 62, C:/Projekte/volleyball/sass/page/_detail.scss */
+#page-detail .lv-timetable .lv-item .female {
+  color: #FF4081;
+}
+
+/* line 65, C:/Projekte/volleyball/sass/page/_detail.scss */
+#page-detail .lv-timetable .lv-item .male {
+  color: #0288D1;
+}
+
 /* line 2, C:/Projekte/volleyball/sass/page/_profile.scss */
 #page-profile .app-bar {
   margin-bottom: 1em;
+}
+
+/* line 5, C:/Projekte/volleyball/sass/page/_profile.scss */
+#page-profile .main {
+  top: 56px;
 }
 
 /* line 1, C:/Projekte/volleyball/sass/page/_register.scss */
@@ -2430,10 +2445,41 @@ body,
 
 /* line 6, C:/Projekte/volleyball/sass/page/_terms.scss */
 #page-terms h2 {
-  font-size: 1.1em;
+  font-size: 16px;
   background: #eee;
-  padding: .7em 1em;
+  padding-left: 16px;
+  font-weight: 600;
   margin: 0;
+  line-height: 48px;
+}
+
+/* line 3, C:/Projekte/volleyball/sass/page/_faq.scss */
+#page-faq .question {
+  font-weight: 700;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: .8em;
+}
+
+/* line 10, C:/Projekte/volleyball/sass/page/_faq.scss */
+#page-faq .subtitle {
+  padding: 0 0 0 1em;
+  margin: 0;
+  font-size: 16px;
+  background: #eee;
+  color: rgba(0, 0, 0, 0.83);
+  font-weight: 600;
+}
+
+/* line 19, C:/Projekte/volleyball/sass/page/_faq.scss */
+#page-faq .main {
+  top: 56px;
+}
+
+/* line 24, C:/Projekte/volleyball/sass/page/_faq.scss */
+#page-faq li {
+  padding: .5em 1em;
+  font-weight: 400;
 }
 
 /* line 1, C:/Projekte/volleyball/sass/widget/_changes.scss */

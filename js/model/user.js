@@ -17,12 +17,16 @@ define([
         this.email  = settings.read("user.email");
         this.name   = settings.read("user.name");
         this.club   = settings.read("user.club");
+        this.sex   = settings.read("user.sex");
+        this.type   = settings.read("user.type");
         this.active = settings.read("user.active");
         this.online = settings.read("user.online");       
         
         if (this.active && this.email) {
             db.get(this.email).then(function(doc) {
                 that.name    = doc.name;
+                that.sex    = doc.sex;
+                that.type    = doc.type;
                 that.club    = doc.club;
                 that.online  = doc.online;
                 that.save();            
@@ -49,6 +53,8 @@ define([
                             key       = "key" in doc ? doc.key : [];
                         
                         that.name    = doc.name;
+                        that.sex    = doc.sex;
+                        that.type    = doc.type;
                         that.club    = doc.club;
                         that.online  = doc.online;
                         
@@ -68,13 +74,15 @@ define([
                 console.log(err);
             });             
                 
-        this.register = function (email, name, club) {
+        this.register = function (email, name, club, sex, type) {
             var key = new Date().getTime();
             
             console.log("user: register()");
             this.email = email;
             this.name = name;
             this.club = club;
+            this.sex = sex;
+            this.type = type;
             this.online = 0;
             this.active = false;
 
@@ -84,21 +92,25 @@ define([
             settings.write("app.key", key);   
             
             db.get(this.email).then(function(doc) {
-                console.log("update user");
+                //console.log("update user");
                 db.put({
                         _id: email,
                         _rev: doc._rev,
                         name: name,
+                        sex: sex,
+                        type: type,
                         club: club,
                         online: 0
                 }).then(function() {
                     that.sendMail(email, name, club, key);
                 });            
             }).catch(function (err) {
-                console.log("new user");              
+                //console.log("new user");              
                 db.put({
                         _id: email,
                         name: name,
+                        sex: sex,
+                        type: type,
                         club: club,
                         online: 0
                 }).then(function() {
@@ -109,7 +121,7 @@ define([
         
         this.sendMail = function(email, name, club, key) {
             console.log("user: sendMail()");
-            console.log(club);
+            //console.log(club);
             $.ajax({
                 url: 'http://app.back2nature.at/volleyball/register.php',
                 data: {
@@ -119,7 +131,7 @@ define([
                     key:    key
                 },
                 success: function(data, status, xhr) {
-                    console.log(data);
+                    //console.log(data);
                 },
                 error: function(xhr, errorType, error) {
                     console.log(error);
@@ -132,21 +144,28 @@ define([
             settings.write("user.email", this.email);
             settings.write("user.name", this.name);
             settings.write("user.club", this.club);
+            settings.write("user.sex", this.sex);
+            settings.write("user.type", this.type);
             settings.write("user.active", this.active);
             settings.write("user.online", this.online);           
         }   
         
-        this.setName = function(name) {
-            console.log("user: setName()");
+        this.set = function(name, sex, type) {
+            console.log("user: set()");
             
             this.name = name;
-            settings.write("user.name", name); 
+            this.sex  = sex;
+            this.type = type;
+            
+            this.save(); 
             
             db.get(this.email).then(function(doc) {
                 doc.name = name;
+                doc.sex = sex;
+                doc.type = type;
                 return db.put(doc);
             }).then(function(response) {
-                console.log("user: setName() ok");
+                //console.log("user: setName() ok");
                 observer.notify("user/name", name);
             }).catch(function (err) {
                 console.log(err);
@@ -165,8 +184,8 @@ define([
                 doc.online = day;
                 return db.put(doc);
             }).then(function(response) {
-                console.log(response);
-                console.log("user: setOnline() ok")
+                //console.log(response);
+                //console.log("user: setOnline() ok")
             }).catch(function (err) {
                 console.log(err);
             });            
@@ -179,6 +198,8 @@ define([
         this.logout = function() {
             this.email   = null;
             this.name    = null;
+            this.sex     = null;
+            this.type    = null;
             this.club    = null;
             this.active  = null;
             this.online  = null;               

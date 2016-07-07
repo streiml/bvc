@@ -23,7 +23,7 @@ define([
         this.refresh = function () {
             console.log("page-calendar: refresh()");
             var events = calendar.getEvents();        
-            
+            //console.log(events);
             this.mbscCalendar.settings.events = events;            
             this.mbscCalendar.refresh();
         };     		
@@ -37,7 +37,7 @@ define([
 			onPosition: function(event, inst) {
                var appbar   = 56,
                    nav      = 87;
-                   console.log(event.windowHeight);
+                   //console.log(event.windowHeight);
 			   $('.mbsc-cal-anim-c', event.target).height(Math.max(240, event.windowHeight - appbar - nav));
 			},
             onBeforeShow: function (event, inst) {
@@ -66,7 +66,7 @@ define([
         */        		
 		observer.subscribe("calendar/update", function(e, calendar) {
 			console.log("page-calendar: event 'calendar/update' received...");   
-            console.log(calendar);      
+            //console.log(calendar);      
             that.refresh();
 		});	        
 	}	

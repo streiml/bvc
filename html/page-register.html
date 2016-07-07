@@ -1,4 +1,5 @@
-<div id="page-register" class="ui-page">                 
+<div id="page-register" class="ui-page">         
+    <div class="main overthrow">            
         <div class="step0">
             <h2>BVC Mank</h2>            
             <label>
@@ -12,6 +13,26 @@
                 <input name="name" type="text" placeholder="Vorname N." required/>
                 <span class="mbsc-err-msg name-empty">Name darf nicht leer sein!</span>
             </div>  
+            <div class="mbsc-input">
+                <label class="mbsc-label">Geschlecht</label>
+            </div>
+            <label>
+                Männlich
+                <input class="male" type="radio" data-role="segmented" name="sex" value="male">
+            </label>
+            <label>
+                Weiblich
+                <input class="female" type="radio" data-role="segmented" name="sex" value="female">
+            </label>
+            <label>    
+                Ich bin    
+                <select class="md-select">
+                    <option value="lizenz">Lizenzspieler</option>
+                    <option value="hobby">Hobbyspieler</option>
+                    <option value="nachwuchs">Nachwuchsspieler</option>
+                    <option value="fan">Fan</option>
+                </select>  
+            </label>              
             <div class="mbsc-btn-group">
                 <button class="mbsc-btn-block" type="submit">Anmelden</button>
             </div>
@@ -19,7 +40,7 @@
         <div class="step1">
             <h2>Fast geschafft!</h2>
             <p>
-                Eine Email mit dem Link zur Aktivierung wurde an deine Emailadresse versandt. Klicke auf den Link um deine Anmeldung abzuschließen.
+                Eine Email mit dem Link zur Aktivierung wurde an deine Emailadresse (<span class="user-email"></span>) versandt. Klicke auf den Link um deine Anmeldung abzuschließen.
             </p>
             <p>
                 HINWEIS: Falls du keine Email erhalten hast, wurde Sie eventuell als Spam erkannt. Durchsuche auch deinen Spam Ordner!
@@ -28,4 +49,5 @@
                 <button class="mbsc-btn-block">Zur&uuml;ck</button>
             </div>        
         </div>
+    </div>
 </div>

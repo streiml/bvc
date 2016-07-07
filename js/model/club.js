@@ -27,7 +27,7 @@ define([
                 console.log("club: db.changes()");
 
                 result.change.docs.map(function (doc) {   
-                    console.log(doc);              
+                    //console.log(doc);              
                     var id   = doc._id,
                         club = doc.club;
                 
@@ -39,7 +39,7 @@ define([
                     }     
                 });           
             }).on('complete', function(info) {
-                console.log(info);
+                //console.log(info);
                 // changes() was canceled
             }).on('error', function (err) {
                 console.log(err);
@@ -66,7 +66,9 @@ define([
             return {
                 _id:    id,
                 name:   id,
-                club:   this.club                
+                club:   this.club ,
+                sex:    'male',
+                type:   'fan'               
             };
         }        
         
@@ -81,7 +83,7 @@ define([
                 reduce: false
             }).then(function(result) {
                 console.log("club-result:");
-                console.log(result);                
+                //console.log(result);                
                 var users = {},
                     day   = new Date().getD();
                 result.rows.map(function (row) { 

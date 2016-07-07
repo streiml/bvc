@@ -64,7 +64,7 @@ define([
          * Aktualisiert die gesamte Ansicht      
          */   
 		this.refresh = function () {
-	       console.log("page-main: refresh()");
+	       console.log("page-main: refresh()");      
            this.setState(user.isOnline()); 
            this.showOnlineUsers(club.users);          
 		};       

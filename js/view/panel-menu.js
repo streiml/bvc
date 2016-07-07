@@ -51,6 +51,12 @@ define([
                                         pageProfile.open(); 
                                     });
                                     break;
+                case 'faq':	        require([
+                                        'view/page-faq'
+                                    ], function(pageFaq) {
+                                        pageFaq.show(); 
+                                    });
+                                    break;
                 case 'exit':		if ('navigator' in window && window.navigator.app)
                                         navigator.app.exitApp();
                                     break;

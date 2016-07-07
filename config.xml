@@ -1,10 +1,10 @@
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="at.back2nature.bvc" version="0.0.4">
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="at.back2nature.bvc" version="0.0.5">
   <name>BVC Mank</name>
   <description>BVC Mank</description>
   <author href="http://phonegap.com" email="gerald.streimelweger@gmail.com">Gerald Streimelweger</author>
   <content src="index.html"/>
   <preference name="permissions" value="none"/>
-  <preference name="orientation" value="default"/>
+  <preference name="orientation" value="portrait"/>
   <preference name="target-device" value="universal"/>
   <preference name="fullscreen" value="false"/>
   <preference name="webviewbounce" value="true"/>

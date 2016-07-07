@@ -29,7 +29,7 @@ define([
             }).on('change', function(result) {
                 // handle change
                 console.log("calendar: db.changes()");
-                console.log(result);
+                //console.log(result);
                 result.change.docs.map(function (doc) {
                     var id      = doc._id,
                         parts   = id.split('#'),
@@ -45,14 +45,14 @@ define([
                         that.calendar[day] = members;
                     } 
                     else if (year == that.year && (month-1) == that.month) {
-                        console.log(doc.day);
+                        //console.log(doc.day);
                         members[doc.user] = doc.time;
                         that.calendar[id] = members;
                     } 
                     observer.notify("calendar/update", that.calendar);                                                          
                 });
             }).on('complete', function(info) {
-                console.log(info);
+                //console.log(info);
                 // changes() was canceled
             }).on('error', function (err) {
                 console.log(err);
@@ -80,11 +80,13 @@ define([
                 that.calendar = {};
                 result.rows.map(function (row) {
                     var doc = row.doc;
-                    console.log(doc);
+                    //console.log(doc);
                     var members = that.calendar[doc.day] || {};
                     members[doc.user] = doc.time; 
                     that.calendar[doc.day] = members; 
-                });                
+                });       
+                //console.log("cal");
+                //console.log(that.calendar);         
                 observer.notify("calendar/update", that.calendar);
             }).catch(function(error) {
                 console.log(error);
@@ -112,15 +114,17 @@ define([
             var events = [];
             
             for (var d in this.calendar) {
-                var members = this.calendar[d] || {},
-                    count   = Object.keys(members).length;
-                
-                if (count > 0) {   
-                    events[events.length] = {
-                        d: mobiscroll.util.datetime.parseDate('yy-mm-dd', d),
-                        text: count + (count > 1 ? " Pers." : " Pers."), 
-                        color: (count > 3 ? 'green' : '#ccc') 
-                    };
+                if (typeof this.calendar[d] !== 'undefined') {
+                    var members = this.calendar[d] || {},
+                        count   = Object.keys(members).length;
+                                        
+                    if (count > 0) {   
+                        events[events.length] = {
+                            d: mobiscroll.util.datetime.parseDate('yy-mm-dd', d),
+                            text: count + (count > 1 ? " Pers." : " Pers."), 
+                            color: (count > 3 ? 'green' : '#ccc') 
+                        };
+                    }
                 }
             }            
             return events;
@@ -131,7 +135,7 @@ define([
                 user    = info.getUser(),
                 time    = info.getTime(),
                 id      = day + "#" + user;
-            console.log(info);
+            //console.log(info);
             if (info.isActive()) {
                 db.upsert(id, function(doc){
                     doc.day = day;
@@ -145,73 +149,7 @@ define([
                     return db.remove(doc);
                 }).catch(function (err) {});
             }
-        };  
-             
-        /*                
-        this.save = function(info) {
-            var day     = info.getDay(),
-                user    = info.getUser(),
-                time    = info.getTime(),
-                members = info.getMembers();
-
-            //that.calendar[day] = members;
-                
-            db.get(day, {conflicts: true}).then(function(doc) {                    
-                console.log("update calendar day...");
-                members = doc["members"];
-                function update() {
-                    if (info.isActive()) {
-                        members[user] = time;
-                    }
-                    else {
-                        delete members[user];                    
-                    }
-                    doc["members"] = members;
-                    // update calendar
-                    db.put(
-                        doc
-                    ).then(function() {
-                        console.log("update calendar day done");
-                        that.calendar[day] = members; 
-                    });                     
-                }
-
-                if ("_conflicts" in doc) {
-                    function loop(conflicts, i) {
-                        if (i < conflicts.length) {
-                            db.get(day, {rev: conflicts[i]}).then(function (result) {
-                                var _members = result["members"];
-                                for (var member in _members) {
-                                    
-                                }
-                                loop(conflicts, i+1);
-                            }).catch(function (err) {
-                            
-                            });                    
-                        }
-                        else {
-                            update();
-                        }
-                    }
-                    
-                    loop(doc["_conflicts"],0);
-                }
-                else {
-                    update();
-                }
-           
-            }).catch(function (err) {
-                console.log("new calendar day...");        
-                db.put({
-                        _id: day,
-                        members: members
-                }).then(function() {
-                    console.log("new calendar day done");
-                    that.calendar[day] = members;
-                });             
-            });                               
-        }
-        */
+        };              
         
         this.setDay(today);
     }

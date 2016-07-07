@@ -19,10 +19,12 @@ define([
             $step1      = $(".step1", $page),
             $email      = $("[name='email']", $page),
             $name       = $("[name='name']", $page),
+            $type       = $(".md-select", $page),
             $register   = $(".mbsc-btn-block", $step0),
             $retry      = $(".mbsc-btn-block", $step1),
 			club		= settings.read("user.club"),
-            that        = this;
+            that        = this,
+            mbscType;
         
         lang ($page);
         
@@ -36,6 +38,15 @@ define([
 		this.refresh = function () {
 			console.log("page-register: refresh()");
             
+            $email.val(user.email||"");
+            $name.val(user.name||"");
+
+            //console.log("sex:" + user.sex);
+            if (user.sex == 'male')        
+                $(".male", $page).prop("checked", true);
+            else
+                $(".female", $page).prop("checked", true);            
+            
             if (settings.read("app.register")) {
                 $step0.hide();
                 $step1.show();
@@ -48,14 +59,27 @@ define([
 		};	
        
         mobiscroll.form($page, { theme: 'volleyball-green' });		               
-        
-        $email.val(user.email||"");
-        $name.val(user.name||"");
-  
+                
+        mbscType = mobiscroll.select($type, {
+            theme: 'volleyball-green',
+            display: 'bottom',
+            onInit: function(e, inst) {
+                inst.setVal(user.type);
+            },            
+            buttons: [ 
+                { 
+                    text: 'Ok',
+                    handler: 'set'
+                }
+            ]            
+        });              
+            
         $register.on("click", function(ev) {     
-            console.log("tap retry");   
+            //console.log("tap retry");   
             var email   = $email.val(),
-                name    = $name.val();               
+                name    = $name.val(),
+                sex     = $("[name='sex']:checked", $page).val(),
+                type    = $type.val();               
                
             $(".mbsc-err-msg").hide();
            
@@ -69,8 +93,9 @@ define([
                   $(".name-empty", $page).show();
             }
             else {
-                 console.log(club);
-                 user.register(email, name, club);         
+                 //console.log(club);
+                 $(".user-email", $page).html(email);
+                 user.register(email, name, club, sex, type);         
                  that.refresh();
             }
         });   
@@ -93,7 +118,7 @@ define([
 			console.log("page-register: event 'user/active' received..."); 
             if (state) {
                 require(["view/page-main"], function(pageMain) { 
-                    pageMain.show();
+                    pageMain.open();
                 });           
             } 
 		});	            

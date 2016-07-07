@@ -88,16 +88,32 @@ define([
         }
         
         this.getTimetable = function() {
-            var timetable = [[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]];
+            var timetable = [[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]],
+                extension = {
+                    'hobby': ' (H)',
+                    'lizenz': ' (L)',
+                    'nachwuchs': ' (N)'
+                };
 
             for (var email in this.members) {
                 var value = this.members[email],
                     start = (value[0] > 0 && value[0] <= 24 ? value[0] : 0),
                     end   = (value[1] > 0 && value[1] <= 24 ? value[1] : 24);
-                console.log(value);
-                console.log(end);
-                for (var i = start;i<end;i++) {
-                    timetable[i].push(club.getMember(email).name); 
+
+                for (var i = start; i < end;i++) {
+                    var member = club.getMember(email),
+                        name   = member.name,
+                        sex    = member.sex,
+                        type   = member.type;
+                        
+                    timetable[i].push(
+                        '<span class="' 
+                        + sex 
+                        + '">' 
+                        + name 
+                        + (extension[type] || '') 
+                        + '</span>'
+                    ); 
                 }
             }
             

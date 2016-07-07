@@ -20,9 +20,11 @@ define([
             $btnLogout  = $(".mbsc-btn-block", $page),
             $email      = $("[name='email']", $page),
             $name       = $("[name='name']", $page),
+            $type       = $(".md-select", $page),
             $btnBack    = $(".mbsc-ic-material-arrow-back", $page),
             mbscWidgetLogout,
-            mbscWidgetChanges;
+            mbscWidgetChanges,
+            mbscType;
         
 		Page.call(this, id, $page);
         
@@ -30,6 +32,13 @@ define([
 			console.log("page-profile: refresh()");
             $name.val(user.name);
             $email.val(user.email);
+            
+            //console.log("sex:" + user.sex);
+            if (user.sex == 'male')        
+                $(".male", $page).prop("checked", true);
+            else
+                $(".female", $page).prop("checked", true);
+                            
 		};	
         
         this.open = function() {            
@@ -51,13 +60,27 @@ define([
             }]          
         });
         
+        mbscType = mobiscroll.select($type, {
+            theme: 'volleyball-green',
+            display: 'bottom',
+            onInit: function(e, inst) {
+                inst.setVal(user.type);
+            },
+            buttons: [ 
+                { 
+                    text: 'Ok',
+                    handler: 'set'
+                }
+            ]            
+        });
+        
         mbscWidgetChanges = mobiscroll.widget($wgChanges, {
             theme: 'volleyball-green',
             display: 'center',
             buttons: [{
                 text: 'Ja',
                 handler: function(e, inst) {
-                    user.setName($name.val());
+                    user.set($name.val(), $("[name='sex']:checked", $page).val(), $type.val());
                     inst.hide();
                     history.pop();                    
                 }
@@ -85,7 +108,7 @@ define([
         }); 
 
         tap.on($btnSave, function(ev) {
-            user.setName($name.val());
+            user.set($name.val(), $("[name='sex']:checked", $page).val(), $type.val());
             history.pop();
         }); 
         

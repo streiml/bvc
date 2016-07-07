@@ -85,7 +85,39 @@ define([
             
             setTimeout(function() { that.show() }, 80);            
         }
-             
+            
+        this.getTitle = function(entry) {
+            var hobby     = 0,
+                lizenz    = 0,
+                nachwuchs = 0,
+                len       = entry.length,
+                title     = '',
+                member,                                
+                i;
+            for (i = len; i--;) {
+                member = entry[i];
+                if (member.indexOf('(H)') > 0)
+                    hobby++;
+                else if (member.indexOf('(L)') > 0)
+                        lizenz++;
+                     else if (member.indexOf('(N)') > 0)
+                            nachwuchs++;
+            }
+            title = len + (len > 1 ? ' Personen' : ' Person');
+            
+            if (hobby > 0 || lizenz > 0 || nachwuchs > 0) {
+                title += ' (';
+                if (lizenz > 0)
+                    title += lizenz + ' L';
+                if (hobby > 0)
+                    title += (lizenz > 0 ? '/' : '') + hobby + ' H';
+                if (nachwuchs > 0)
+                    title += (hobby > 0 || lizenz > 0 ? '/' : '') + nachwuchs + ' N';
+                title += ')';                
+            }
+            
+            return title;
+        } 
        		
         this.refresh = function () {
             console.log("page-detail: refresh()");
@@ -117,7 +149,7 @@ define([
             this.updateTime(time);
                                         
             for (i = 0; i < 24; i++) {
-                var entry = timetable[i].sort(),
+                var entry = timetable[i].sort(),                   
                     len   = entry.length, 
                     hash  = JSON.stringify(entry),
                     li    = '';
@@ -148,7 +180,7 @@ define([
                         li += '<li class="lv-item">'
                         +  '<div class="begin">' +  begin + '</div>'
                         +  '<div class="end">' + end + '</div>'
-                        +  '<div class="title">' + len + (len > 1 ? ' Personen' : ' Person') + '</div>'
+                        +  '<div class="title">' + this.getTitle(entry) + '</div>'
                         +  '<span class="people">'
                         +  entry.join(', ')
                         +  '</span>'
@@ -188,7 +220,7 @@ define([
                 that.updateTime([+$timeBegin.val()/2, +$timeEnd.val()/2]);
                 
                 timeout = setTimeout(function() {
-                    console.log("begin");
+                    //console.log("begin");
                     info.setTime([+$timeBegin.val()/2, +$timeEnd.val()/2]);            
                 }, 300);
             }
@@ -202,7 +234,7 @@ define([
                 that.updateTime([+$timeBegin.val()/2,this.value/2]);
                 
                 timeout = setTimeout(function() {
-                    console.log("end");
+                    //console.log("end");
                     info.setTime([+$timeBegin.val()/2, +$timeEnd.val()/2]); 
                 }, 300);
             }
