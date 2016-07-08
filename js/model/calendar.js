@@ -11,11 +11,18 @@ define([
     function Calendar() {
         var dbName  = settings.read("app.calendar"),
             db      = new PouchDB(dbName),
+            /*
             remote  = new PouchDB('https://couchdb-e30c29.smileupps.com/' + dbName,
                        {
                            "auth.username": "admin",
                            "auth.password": "43992a0c490c"
                        }),
+                       */
+            remote  = new PouchDB('https://couchdb.cloudno.de/' + dbName,
+                       {
+                           "auth.username": "gerald.streimelweger",
+                           "auth.password": "volleyball"
+                       }),                          
             today   = new Date(),
             that    = this;        
 

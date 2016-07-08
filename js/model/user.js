@@ -7,11 +7,18 @@ define([
     
     function User() {
         var db      = new PouchDB("user"),
+        /*
             remote  = new PouchDB('https://couchdb-e30c29.smileupps.com/user',
                        {
                            "auth.username": "admin",
                            "auth.password": "43992a0c490c"
                        }),
+                       */
+            remote  = new PouchDB('https://couchdb.cloudno.de/user',
+                       {
+                           "auth.username": "gerald.streimelweger",
+                           "auth.password": "volleyball"
+                       }),                       
             that    = this;   
                  
         this.email  = settings.read("user.email");
