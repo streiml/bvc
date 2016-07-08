@@ -17,7 +17,7 @@ define([
         this.email  = settings.read("user.email");
         this.name   = settings.read("user.name");
         this.club   = settings.read("user.club");
-        this.sex   = settings.read("user.sex");
+        this.sex    = settings.read("user.sex");
         this.type   = settings.read("user.type");
         this.active = settings.read("user.active");
         this.online = settings.read("user.online");       
@@ -43,14 +43,14 @@ define([
                 // handle change                
                 console.log("user: db.changes()");
                     console.log("user-result:");
-                    console.log(result);
+                    //console.log(result);
 
                 result.change.docs.map(function (doc) { 
-                    console.log(doc);
+                    //console.log(doc);
                     if (doc._id == that.email) {
                         var wasActive = that.active,
                             appkey    = settings.read("app.key"),
-                            key       = "key" in doc ? doc.key : [];
+                            key       = "key" in doc ? doc.key : 'empty';
                         
                         that.name    = doc.name;
                         that.sex    = doc.sex;
@@ -58,7 +58,7 @@ define([
                         that.club    = doc.club;
                         that.online  = doc.online;
                         
-                        if (!wasActive && key.indexOf(appkey) != -1) {
+                        if (!wasActive && key == appkey) {
                             that.active = true;
                             console.log("activate user");
                             observer.notify("user/active", true);
@@ -130,6 +130,8 @@ define([
                     club:   club,
                     key:    key
                 },
+                crossDomain: true,
+                dataType: 'jsonp',
                 success: function(data, status, xhr) {
                     //console.log(data);
                 },
@@ -202,7 +204,8 @@ define([
             this.type    = null;
             this.club    = null;
             this.active  = null;
-            this.online  = null;               
+            this.online  = null;     
+            localStorage.clear();          
             observer.notify("user/logout");
         }
     }
