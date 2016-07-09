@@ -79,6 +79,8 @@ define([
         }        
         
         this.getOnlineUsers = function() {
+            var club = this.club;
+            
             console.log("club: getOnlineUsers()");
             db.query(function(doc, emit) {  
                 if (doc.key && doc.online > 0) {    
@@ -90,11 +92,25 @@ define([
             }).then(function(result) {
                 console.log("club-result:");
                 //console.log(result);                
-                var users = {},
+                var users = {
+                        'lizenz': [],
+                        'hobby': [],
+                        'nachwuchs': [],
+                        'fan': []                    
+                    },
                     day   = new Date().getD();
-                result.rows.map(function (row) { 
-                    if (row.doc.online == day)
-                        users[row.id] = row.value;
+                result.rows.map(function (row) {
+                    var doc = row.doc;
+                     
+                    if (doc.online == day && doc.club == club && doc.type in users) {
+                        users[doc.type].push(
+                            '<span class="' 
+                            + doc.sex 
+                            + '">' 
+                            + doc.name 
+                            + '</span>'
+                        );  
+                    }
                 });                           
                 observer.notify("user/online", users);
             }).catch(function(error) {

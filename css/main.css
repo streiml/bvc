@@ -1597,7 +1597,7 @@ ul.staggered-list li {
 }
 
 /* line 388, C:/Projekte/volleyball/sass/components/_global.scss */
-.position-absolute, #page-main .main, #page-profile .main, #page-register .main, #page-faq .main {
+.position-absolute, #page-main .main, #page-main .main .overthrow, #page-profile .main, #page-register .main, #page-faq .main {
   position: absolute;
   left: 0;
   right: 0;
@@ -2276,27 +2276,33 @@ body,
 }
 
 /* line 23, C:/Projekte/volleyball/sass/page/_main.scss */
-#page-main .main .overthrow {
-  position: absolute;
-  top: 48px;
-  left: 0;
-  right: 0;
-  bottom: 0;
+#page-main .main .subtitle {
+  padding-left: 0;
 }
 
-/* line 33, C:/Projekte/volleyball/sass/page/_main.scss */
+/* line 31, C:/Projekte/volleyball/sass/page/_main.scss */
+#page-main .main .female {
+  color: #FF4081;
+}
+
+/* line 34, C:/Projekte/volleyball/sass/page/_main.scss */
+#page-main .main .male {
+  color: #0288D1;
+}
+
+/* line 40, C:/Projekte/volleyball/sass/page/_main.scss */
 #page-main .view-state {
   background-color: #8bc34a;
   color: #fff;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.16);
 }
 
-/* line 39, C:/Projekte/volleyball/sass/page/_main.scss */
+/* line 46, C:/Projekte/volleyball/sass/page/_main.scss */
 #page-main .mbsc-desc {
   color: rgba(255, 255, 255, 0.7);
 }
 
-/* line 43, C:/Projekte/volleyball/sass/page/_main.scss */
+/* line 50, C:/Projekte/volleyball/sass/page/_main.scss */
 #page-main.mbsc-volleyball .mbsc-switch input:checked + .mbsc-switch-track .mbsc-switch-handle {
   background: #ff3d00;
 }

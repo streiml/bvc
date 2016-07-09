@@ -70,16 +70,31 @@ define([
 		};       
         
         this.showOnlineUsers = function() {
-            var li = [];
-            for (var email in users) {
-                li[li.length] = '<li class="lv-item">' + users[email] + '</li>';
+            var headers = {
+                    'lizenz': 'Lizenz',
+                    'hobby': 'Hobby',
+                    'nachwuchs': 'Nachwuchs',
+                    'fan': 'Fan'
+                },   
+                html  = '',
+                count = 0;
+            console.log(users);
+            for (var type in users) {
+                var ul = users[type].sort(),
+                    len = ul.length;
+                
+                count += len;
+                
+                if (len > 0) {      
+                    html += '<li class="subtitle">' + headers[type] + " (" + len + ")" + '</li>';              
+                    for (var i = 0; i < len; i++)
+                        html += '<li class="lv-item">' + ul[i] + '</li>';
+                }                
             }
-            li.sort();
             
-            $onlineUser.html(li.join(''));
-            $subtitle.html(messages["USER.ONLINE"] + " (" + li.length + ")" );
+            $onlineUser.html(html);
             
-            if (li.length > 0) {
+            if (count > 0) {
                 $empty.css("display", "none");
             }
             else {
