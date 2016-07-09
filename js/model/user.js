@@ -29,6 +29,13 @@ define([
         this.active = settings.read("user.active");
         this.online = settings.read("user.online");       
         
+        
+        remote.info().then(function (result) {
+            $("#asdf").append(JSON.stringify(result));
+        }).catch(function (err) {
+            $("#asdf").append(JSON.stringify(err));
+        });
+        
         if (this.active && this.email) {
             db.get(this.email).then(function(doc) {
                 that.name    = doc.name;
