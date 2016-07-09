@@ -1,4 +1,4 @@
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="at.back2nature.bvc" version="1.0.1">
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="at.back2nature.bvc" version="1.0.2">
   <name>BVC Mank</name>
   <description>BVC Mank</description>
   <author href="http://phonegap.com" email="gerald.streimelweger@gmail.com">Gerald Streimelweger</author>
@@ -41,6 +41,8 @@
         <!-- Access to the subdomain maps.google.com -->
 	<access origin="http://*.cloudno.de"  subdomains="true"/>
 	<access origin="https://*.cloudno.de"  subdomains="true"/>
+	<access origin="https://couchdb.cloudno.de"  subdomains="true"/>	
+	<access origin="http://couchdb.cloudno.de"  subdomains="true"/>	
 	<access origin="http://*.back2nature.at"  subdomains="true"/>
 	<!-- Access to all the subdomains on google.com -->
 	<access origin="http://*.google.com" subdomains="true"/>  

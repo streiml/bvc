@@ -70,7 +70,7 @@ define([
     });	 
             	
 	$document.trigger('mbsc-enhance');
-	$document.trigger('deviceready');
+	//$document.trigger('deviceready');
 	
     return app;	
 });
