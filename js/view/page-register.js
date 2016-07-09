@@ -55,6 +55,8 @@ define([
                 $step0.show();
                 $step1.hide();
             } 
+            
+            $(".user-email", $page).html(user.email||"");
                   
 		};	
        

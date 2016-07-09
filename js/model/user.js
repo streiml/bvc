@@ -17,7 +17,7 @@ define([
             remote  = new PouchDB('https://couchdb.cloudno.de/user',
                        {
                            "auth.username": "gerald.streimelweger",
-                           "auth.password": "volleyball"
+                           "auth.password": "nZEuNob0Bn"
                        }),                       
             that    = this;   
                  
