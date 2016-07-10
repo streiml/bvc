@@ -2489,6 +2489,26 @@ body,
   font-weight: 400;
 }
 
+/* line 1, C:/Projekte/volleyball/sass/page/_locked.scss */
+#page-locked {
+  background: #fff;
+  width: 100%;
+  height: 100%;
+  display: table;
+  text-align: center;
+}
+
+/* line 8, C:/Projekte/volleyball/sass/page/_locked.scss */
+#page-locked div {
+  display: table-cell;
+  vertical-align: middle;
+  white-space: nowrap;
+  font-size: 2em;
+  color: #fff;
+  font-weight: 200;
+  color: red;
+}
+
 /* line 1, C:/Projekte/volleyball/sass/widget/_changes.scss */
 .widget-changes {
   font-size: 16px;

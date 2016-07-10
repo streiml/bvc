@@ -25,7 +25,12 @@ define([
 	document.addEventListener("deviceready", function() {
         console.log("device ready...");
         // show main page
-        if (settings.read("user.active")) {
+        if (settings.read("user.locked")) {
+            require(["view/page-locked"], function(pageLocked) { 
+                pageLocked.show();
+            });            
+        }
+        else if (settings.read("user.active")) {
             require(["view/page-main"], function(pageMain) { 
                 pageMain.open();
             });
@@ -68,6 +73,13 @@ define([
             pageRegister.show();
         });            
     });	 
+    
+    observer.subscribe("user/locked", function(e, state) {
+        console.log("app: event 'user/locked' received...");
+        require(["view/page-locked"], function(pageLocked) { 
+            pageLocked.show();
+        });           
+    });	     
             	
 	$document.trigger('mbsc-enhance');
 

@@ -39,12 +39,17 @@ define([
                     var id   = doc._id,
                         club = doc.club;
                 
-                    if (club == that.club) {
-                        that.getOnlineUsers();
+                    if ("_deleted" in doc && doc["_deleted"] == true) {
+                        delete that.members[id];
                     }
-                    if (id.indexOf("@") != -1) {
-                        that.members[id] = doc;
-                    }     
+                    else {
+                        if (club == that.club) {
+                            that.getOnlineUsers();
+                        }
+                        if (id.indexOf("@") != -1) {
+                            that.members[id] = doc;
+                        }     
+                    }
                 });           
             }).on('complete', function(info) {
                 //console.log(info);

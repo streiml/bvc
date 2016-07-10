@@ -29,8 +29,7 @@ define([
         this.sex    = settings.read("user.sex");
         this.type   = settings.read("user.type");
         this.active = settings.read("user.active");
-        this.online = settings.read("user.online");       
-        
+        this.online = settings.read("user.online");               
         
         if (this.active && this.email) {
             db.get(this.email).then(function(doc) {
@@ -39,10 +38,12 @@ define([
                 that.type    = doc.type;
                 that.club    = doc.club;
                 that.online  = doc.online;
-                that.save();            
+                that.save();    
+                settings.write("user.locked", false);        
             }).catch(function (err) {
                 console.log("no user found");     
-                //that.logout();            
+                settings.write("user.locked", true); 
+                observer.notify("user/locked", true);           
             });                            
         }
             db.sync(remote, {
@@ -51,30 +52,34 @@ define([
                 include_docs: true
             }).on('change', function(result) {
                 // handle change                
-                console.log("user: db.changes()");
-                    console.log("user-result:");
-                    //console.log(result);
 
                 result.change.docs.map(function (doc) { 
-                    //console.log(doc);
+                    console.log(doc);
                     if (doc._id == that.email) {
-                        var wasActive = that.active,
-                            appkey    = settings.read("app.key"),
-                            key       = "key" in doc ? doc.key : 'empty';
-                        
-                        that.name    = doc.name;
-                        that.sex    = doc.sex;
-                        that.type    = doc.type;
-                        that.club    = doc.club;
-                        that.online  = doc.online;
-                        
-                        if (!wasActive && key == appkey) {
-                            that.active = true;
-                            console.log("activate user");
-                            observer.notify("user/active", true);
-                        }   
-                                    
-                        that.save();
+                        if ("_deleted" in doc && doc["_deleted"] == true) {
+                            console.log("delete");
+                            settings.write("user.locked", true); 
+                            observer.notify("user/locked", true);                                
+                        }
+                        else {
+                            var wasActive = that.active,
+                                appkey    = settings.read("app.key"),
+                                key       = "key" in doc ? doc.key : 'empty';
+                            
+                            that.name    = doc.name;
+                            that.sex    = doc.sex;
+                            that.type    = doc.type;
+                            that.club    = doc.club;
+                            that.online  = doc.online;
+                            
+                            if (!wasActive && key == appkey) {
+                                that.active = true;
+                                console.log("activate user");
+                                observer.notify("user/active", true);
+                            }   
+                                        
+                            that.save();
+                        }
                     }
                 });
             }).on('complete', function(info) {
