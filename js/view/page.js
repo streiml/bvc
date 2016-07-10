@@ -8,7 +8,7 @@ define([
 
 	// Class: Page
 	return function Page(id, $html) {
-		this.id 	= id
+		this.id 	= id;
 		this._view 	= $html;
         
         lang ($html);

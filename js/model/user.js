@@ -54,10 +54,10 @@ define([
                 // handle change                
 
                 result.change.docs.map(function (doc) { 
-                    console.log(doc);
+                    //console.log(doc);
                     if (doc._id == that.email) {
                         if ("_deleted" in doc && doc["_deleted"] == true) {
-                            console.log("delete");
+                            //console.log("delete");
                             settings.write("user.locked", true); 
                             observer.notify("user/locked", true);                                
                         }

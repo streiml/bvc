@@ -7,12 +7,16 @@ define([
 	console.log("loading module 'view/page-locked'...");
     
 	function PageLocked (id) {
-        var $page       = $(html);
-		Page.call(this, id, $page);
+		this.id 	= id;
+		this._view 	= $(html);        
         
-		this.refresh = function () {
-			console.log("page-faq: refresh()");                            
-		};	
+        this._view.appendTo("body");
+        	
+		this.show = function(params) {
+			console.log("Page: show(" + this.id + ")");
+			$(".ui-page-active").removeClass("ui-page-active");
+			this._view.addClass("ui-page-active");
+		};
 	}	
 	
 	PageLocked.prototype = Object.create(Page.prototype);
