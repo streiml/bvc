@@ -78,7 +78,7 @@ define([
                 },   
                 html  = '',
                 count = 0;
-            console.log(users);
+            //console.log(users);
             for (var type in users) {
                 var ul = users[type].sort(),
                     len = ul.length;

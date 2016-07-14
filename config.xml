@@ -1,4 +1,4 @@
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="at.back2nature.bvc" version="1.1.0">
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="at.back2nature.bvc" version="1.2.0">
   <name>BVC Mank</name>
   <description>BVC Mank</description>
   <author href="http://phonegap.com" email="gerald.streimelweger@gmail.com">Gerald Streimelweger</author>

@@ -105,15 +105,27 @@ define([
                         name   = member.name,
                         sex    = member.sex,
                         type   = member.type;
-                        
-                    timetable[i].push(
-                        '<span class="' 
-                        + sex 
-                        + '">' 
-                        + name 
-                        + (extension[type] || '') 
-                        + '</span>'
-                    ); 
+                    
+                    if (email.indexOf('@') > 0) {
+                        if (JSON.stringify(timetable[i]).indexOf("description") == -1) {    
+                            timetable[i].push(
+                                '<span class="' 
+                                + sex 
+                                + '">' 
+                                + name 
+                                + (extension[type] || '') 
+                                + '</span>'
+                            ); 
+                        }
+                    }
+                    else {
+                        var tokens = name.split(':');                                                        
+                        timetable[i] = [
+                            '<p class="description" data-title="' + (tokens.length == 2 ? tokens[0] : "Reserviert") + '">' 
+                            + (tokens.length == 2 ? tokens[1] : name) 
+                            + '</p>'
+                        ];           
+                    }
                 }
             }
             

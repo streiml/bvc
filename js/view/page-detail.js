@@ -74,6 +74,7 @@ define([
             var time,
                 that = this;
             
+            updating = true;
             $title.html(mobiscroll.util.datetime.formatDate('dd.mm.yy', date));
 
             info     = calendar.getEntry();
@@ -96,7 +97,10 @@ define([
                 i;
             for (i = len; i--;) {
                 member = entry[i];
-                if (member.indexOf('(H)') > 0)
+                if (member.indexOf('description') > 0) {
+                    return $(member).data("title");
+                }
+                else if (member.indexOf('(H)') > 0)
                     hobby++;
                 else if (member.indexOf('(L)') > 0)
                         lizenz++;
@@ -121,6 +125,7 @@ define([
        		
         this.refresh = function () {
             console.log("page-detail: refresh()");
+            updating = true;
             var timetable = info.getTimetable(),
                 active    = info.isActive(),
                 time      = info.getTime(),
@@ -132,7 +137,6 @@ define([
                 end,
                 last;
             
-            updating = true;
             if (active) {
                 this.mbscSwitch.setVal(true);
                 $timeLabel.removeClass("disabled");
@@ -153,7 +157,7 @@ define([
                     len   = entry.length, 
                     hash  = JSON.stringify(entry),
                     li    = '';
-                    
+                //console.log(entry);    
                 if (hash != last) {
                     if (len > 0) {
                         for (j = i; j < 24; j++) {                            
@@ -265,7 +269,8 @@ define([
         */        		        
 		observer.subscribe("day/update", function(e, info) {
 			console.log("page-detail: event 'day/update' received...");
-            that.refresh();
+            if (!updating)
+                that.refresh();
 		});	        
 	}	
 	

@@ -121,17 +121,30 @@ define([
         
         this.getEvents = function() {
             var events = [];
-            
+            //console.log(this.calendar);
             for (var d in this.calendar) {
                 if (typeof this.calendar[d] !== 'undefined') {
                     var members = this.calendar[d] || {},
-                        count   = Object.keys(members).length;
-                                        
-                    if (count > 0) {   
+                        keys    = Object.keys(members),
+                        count   = 0,
+                        title   = '',
+                        color   = '#ccc';
+                    
+                    for (var i = keys.length; i--; ) {
+                        if (keys[i].indexOf(":") > 0) {
+                            color = '#FFA000';
+                            title = keys[i].split(':')[0] || 'Event';
+                        }
+                        else {
+                            count++;
+                        }
+                    }
+                     
+                    if (count > 0 || color != '#ccc') {   
                         events[events.length] = {
                             d: mobiscroll.util.datetime.parseDate('yy-mm-dd', d),
-                            text: count + (count > 1 ? " Pers." : " Pers."), 
-                            color: (count > 3 ? 'green' : '#ccc') 
+                            text: count > 0 && title == '' ? count + " Pers." : title, 
+                            color: (count > 3 ? 'green' : color) 
                         };
                     }
                 }

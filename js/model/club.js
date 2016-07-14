@@ -80,7 +80,7 @@ define([
                 _id:    id,
                 name:   id,
                 club:   this.club ,
-                sex:    'male',
+                sex:    'unknown',
                 type:   'fan'               
             };
         }        

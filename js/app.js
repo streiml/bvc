@@ -69,7 +69,7 @@ define([
     observer.subscribe("user/logout", function(e, state) {
         console.log("app: event 'user/logout' received...");
         localStorage.clear(); 
-        require(["view/page-register"], function(pageRegister) { 
+        require(["view/page-register"], function(pageRegister) {
             pageRegister.show();
         });            
     });	 
