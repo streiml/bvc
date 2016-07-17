@@ -56,7 +56,8 @@ define([
                     else if (year == that.year && (month-1) == that.month) {
                         //console.log(doc.day);
                         members[doc.user] = doc.time;
-                        that.calendar[id] = members;
+                        that.calendar[day] = members;
+                        //    console.log(that.calendar);        
                     } 
                     observer.notify("calendar/update", that.calendar);                                                          
                 });
