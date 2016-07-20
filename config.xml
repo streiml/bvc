@@ -20,8 +20,16 @@
   <preference name="android-installLocation" value="auto"/>
 
   <gap:plugin name="org.apache.cordova.network-information"/>
+  <gap:plugin name="com.phonegap.plugin.statusbar" />
+  <preference name="StatusBarOverlaysWebView" value="false" />
 
   <icon src="icon.png"/>
+  <icon src="icon-57.png" gap:platform="ios" width="57" height="57"/>
+  <icon src="icon-72.png" gap:platform="ios" width="72" height="72"/>
+  <icon src="icon-72_at_2x.png" gap:platform="ios" width="144" height="144"/>
+
+  <gap:splash src="splash.png" />
+  <gap:splash src="splash_iphone5.png" gap:platform="ios" width="640" height="1136"/>
   <icon src="/res/icons/android/icon-36-ldpi.png" gap:platform="android" gap:qualifier="ldpi"/>
   <icon src="/res/icons/android/icon-48-mdpi.png" gap:platform="android" gap:qualifier="mdpi"/>
   <icon src="/res/icons/android/icon-72-hdpi.png" gap:platform="android" gap:qualifier="hdpi"/>
