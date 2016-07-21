@@ -36,7 +36,7 @@ define([
             //console.log("sex:" + user.sex);
             if (user.sex == 'male')        
                 $(".male", $page).prop("checked", true);
-            else
+            else if (user.sex == 'female')
                 $(".female", $page).prop("checked", true);
                             
 		};	
