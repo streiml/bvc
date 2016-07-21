@@ -44,7 +44,7 @@ define([
             //console.log("sex:" + user.sex);
             if (user.sex == 'male')        
                 $(".male", $page).prop("checked", true);
-            else
+            else if (user.sex == 'female')  
                 $(".female", $page).prop("checked", true);            
             
             if (settings.read("app.register")) {
@@ -80,7 +80,7 @@ define([
             //console.log("tap retry");   
             var email   = $email.val(),
                 name    = $name.val(),
-                sex     = $("[name='sex']:checked", $page).val(),
+                sex     = $("[name='sex']:checked", $page).val() || 'none',
                 type    = $type.val();               
                
             $(".mbsc-err-msg").hide();
